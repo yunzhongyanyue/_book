@@ -1,0 +1,723 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <title>3. Python Pandas · 学习笔记</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.0.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-page-footer-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-sectionx/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-theme-fexa/fexa.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-auto-scroll-table/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="chapter4.html" />
+    
+    
+    <link rel="prev" href="chapter2/chapter2_sub_02.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+	<div class="header-inner">
+		<!-- LOGO -->
+		<div class="logo"></div>
+		<span class="title"></span>
+
+		<!-- Search -->
+		
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+
+		<!-- Nav -->
+		<ul class="header-nav">
+			<li>
+				<a href="/" target="_blank">简易教程</a>
+			</li>
+		</ul>
+	</div>
+
+	<div class="book-summary">
+		<div class="book-summary-title">文档目录</div>
+		
+		
+		<nav role="navigation">
+			
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="chapter1.html">
+            
+                <a href="chapter1.html">
+            
+                    
+                    1. GetBook使用教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="chapter2.html">
+            
+                <a href="chapter2.html">
+            
+                    
+                    2. Python Numpy
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="chapter2/chapter2_sub_01.html">
+            
+                <a href="chapter2/chapter2_sub_01.html">
+            
+                    
+                    2.1 Numpy基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="chapter2/chapter2_sub_02.html">
+            
+                <a href="chapter2/chapter2_sub_02.html">
+            
+                    
+                    2.2Numpy科学计算
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4" data-path="chapter3.html">
+            
+                <a href="chapter3.html">
+            
+                    
+                    3. Python Pandas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="chapter4.html">
+            
+                <a href="chapter4.html">
+            
+                    
+                    4. Python Matplotlib
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="chapter5.html">
+            
+                <a href="chapter5.html">
+            
+                    
+                    5. Git教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+		</nav>
+		
+		
+	</div>
+
+	<!-- Content nav -->
+	<div class="book-anchor">
+		<div class="book-anchor-title">在这篇文章中:</div>
+		<div class="book-anchor-body">
+
+		</div>
+	</div>
+
+	<div class="book-body">
+		
+		<div class="body-inner">
+			
+			
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >3. Python Pandas</a>
+    </h1>
+</div>
+
+
+
+
+			<div class="page-wrapper" tabindex="-1" role="main">
+				<div class="page-inner">
+					
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+					<section class="normal markdown-section">
+						
+						<h1 id="1-pandas-&#x57FA;&#x7840;">1. Pandas &#x57FA;&#x7840;</h1>
+<h2 id="11-python&#x6570;&#x636E;&#x7ED3;&#x6784;">1.1 Python&#x6570;&#x636E;&#x7ED3;&#x6784;</h2>
+<p>&#x5728;&#x6807;&#x51C6;&#x7684;Python&#x6570;&#x636E;&#x7C7B;&#x578B;&#x4E2D;&#xFF0C;&#x6709;&#x4E9B;&#x662F;&#x53EF;&#x53D8;&#x7684;&#xFF0C;&#x6709;&#x4E9B;&#x662F;&#x4E0D;&#x53EF;&#x53D8;&#x7684;&#x3002;&#x4E0D;&#x53EF;&#x53D8;&#x5C31;&#x610F;&#x5473;&#x7740;&#x4F60;&#x4E0D;&#x80FD;&#x5BF9;&#x5B83;&#x8FDB;&#x884C;&#x64CD;&#x4F5C;&#xFF0C;&#x53EA;&#x80FD;&#x8BFB;&#x53D6;&#x3002;</p>
+<ul>
+<li>&#x4E0D;&#x53EF;&#x53D8;&#x6570;&#x636E;&#xFF1A;Number&#xFF08;&#x6570;&#x5B57;&#xFF09;&#x3001;String&#xFF08;&#x5B57;&#x7B26;&#x4E32;&#xFF09;&#x3001;Tuple&#xFF08;&#x5143;&#x7EC4;&#xFF09;&#x3002;</li>
+<li>&#x53EF;&#x53D8;&#x6570;&#x636E;&#xFF1A;List&#xFF08;&#x5217;&#x8868;&#xFF09;&#x3001;Dictionary&#xFF08;&#x5B57;&#x5178;&#xFF09;&#x3001;Set&#xFF08;&#x96C6;&#x5408;&#xFF09;&#x3002;</li>
+</ul>
+<pre class="language-"><code class="lang-python"><span class="token comment"># isinstance&#x51FD;&#x6570;&#x7528;&#x6765;&#x5224;&#x65AD;&#x6570;&#x636E;&#x662F;&#x4E0D;&#x662F;&#x6307;&#x5B9A;&#x7C7B;&#x578B;</span>
+<span class="token builtin">isinstance</span><span class="token punctuation">(</span><span class="token number">123</span><span class="token punctuation">,</span> <span class="token builtin">int</span><span class="token punctuation">)</span>
+<span class="token comment"># True</span>
+</code></pre>
+<p><strong>&#x5E38;&#x7528;&#x7684;&#x5B57;&#x7B26;&#x64CD;&#x4F5C;&#xFF1A;</strong></p>
+<pre class="language-"><code class="lang-python"><span class="token builtin">len</span><span class="token punctuation">(</span><span class="token string">&apos;good&apos;</span><span class="token punctuation">)</span>                     <span class="token comment"># 4 &#xFF08;&#x5B57;&#x7B26;&#x7684;&#x957F;&#x5EA6;&#xFF09;</span>
+<span class="token string">&apos;good&apos;</span><span class="token punctuation">.</span>replace<span class="token punctuation">(</span><span class="token string">&apos;g&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;G&apos;</span><span class="token punctuation">)</span>        <span class="token comment"># &apos;Good&apos; &#xFF08;&#x66FF;&#x6362;&#x5B57;&#x7B26;&#xFF09;</span>
+<span class="token string">&apos;&#x5C71;-&#x6C34;-&#x98CE;-&#x96E8;&apos;</span><span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">&apos;-&apos;</span><span class="token punctuation">)</span>         <span class="token comment"># [&apos;&#x5C71;&apos;, &apos;&#x6C34;&apos;, &apos;&#x98CE;&apos;, &apos;&#x96E8;&apos;] &#xFF08;&#x7528;&#x6307;&#x5B9A;&#x5B57;&#x7B26;&#x5206;&#x9694;&#xFF0C;&#x9ED8;&#x8BA4;&#x7A7A;&#x683C;&#xFF09;</span>
+<span class="token string">&apos;&#x597D;&#x5C71;&#x597D;&#x6C34;&#x597D;&#x98CE;&#x5149;&apos;</span><span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">&apos;&#x597D;&apos;</span><span class="token punctuation">)</span>      <span class="token comment"># [&apos;&apos;, &apos;&#x5C71;&apos;, &apos;&#x6C34;&apos;, &apos;&#x98CE;&#x5149;&apos;]</span>
+<span class="token string">&apos;-&apos;</span><span class="token punctuation">.</span>join<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">&apos;&#x5C71;&apos;</span><span class="token punctuation">,</span><span class="token string">&apos;&#x6C34;&apos;</span><span class="token punctuation">,</span><span class="token string">&apos;&#x98CE;&apos;</span><span class="token punctuation">,</span><span class="token string">&apos;&#x96E8;&apos;</span><span class="token punctuation">]</span><span class="token punctuation">)</span>  <span class="token comment"># &apos;&#x5C71;-&#x6C34;-&#x98CE;-&#x96E8;&apos;</span>
+<span class="token string">&apos;&#x548C;&apos;</span><span class="token punctuation">.</span>join<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">&apos;&#x8BD7;&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;&#x8FDC;&#x65B9;&apos;</span><span class="token punctuation">]</span><span class="token punctuation">)</span>        <span class="token comment"># &apos;&#x8BD7;&#x548C;&#x8FDC;&#x65B9;&apos;</span>
+<span class="token string">&apos;good&apos;</span><span class="token punctuation">.</span>upper<span class="token punctuation">(</span><span class="token punctuation">)</span>                  <span class="token comment"># &apos;GOOD&apos; &#xFF08;&#x5168;&#x8F6C;&#x5927;&#x5199;&#xFF09;</span>
+<span class="token string">&apos;GOOD&apos;</span><span class="token punctuation">.</span>lower<span class="token punctuation">(</span><span class="token punctuation">)</span>                  <span class="token comment"># &apos;good&apos; &#xFF08;&#x5168;&#x8F6C;&#x5C0F;&#x5199;&#xFF09;</span>
+<span class="token string">&apos;Good Bye&apos;</span><span class="token punctuation">.</span>swapcase<span class="token punctuation">(</span><span class="token punctuation">)</span>           <span class="token comment"># &apos;gOOD bYE&apos; &#xFF08;&#x5927;&#x5C0F;&#x5199;&#x4E92;&#x6362;&#xFF09;</span>
+<span class="token string">&apos;good&apos;</span><span class="token punctuation">.</span>capitalize<span class="token punctuation">(</span><span class="token punctuation">)</span>             <span class="token comment"># &apos;Good&apos; &#xFF08;&#x9996;&#x5B57;&#x6BCD;&#x8F6C;&#x5927;&#x5199;&#xFF09;</span>
+<span class="token string">&apos;good&apos;</span><span class="token punctuation">.</span>islower<span class="token punctuation">(</span><span class="token punctuation">)</span>                <span class="token comment"># True &#xFF08;&#x662F;&#x5426;&#x5168;&#x662F;&#x5C0F;&#x5199;&#xFF09;</span>
+<span class="token string">&apos;good&apos;</span><span class="token punctuation">.</span>isupper<span class="token punctuation">(</span><span class="token punctuation">)</span>                <span class="token comment"># False &#xFF08;&#x662F;&#x5426;&#x5168;&#x662F;&#x5927;&#x5199;&#xFF09;</span>
+<span class="token string">&apos;3&#x6708;&apos;</span><span class="token punctuation">.</span>zfill<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span>                  <span class="token comment"># &apos;03&#x6708;&apos; &#xFF08;&#x6307;&#x5B9A;&#x957F;&#x5EA6;&#xFF0C;&#x5982;&#x957F;&#x5EA6;&#x4E0D;&#x591F;&#xFF0C;&#x524D;&#x9762;&#x8865;0&#xFF09;</span>
+</code></pre>
+<p><strong>&#x5217;&#x8868;&#x5E38;&#x7528;&#x64CD;&#x4F5C;&#xFF1A;</strong></p>
+<pre class="language-"><code class="lang-python"><span class="token builtin">sorted</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span>                <span class="token comment"># &#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x6392;&#x5E8F;&#x7684;&#x5217;&#x8868;&#xFF0C;&#x4F46;&#x4E0D;&#x6539;&#x53D8;&#x539F;&#x5217;&#x8868;</span>
+<span class="token builtin">any</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span>                   <span class="token comment"># True&#xFF08;&#x662F;&#x5426;&#x81F3;&#x5C11;&#x6709;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x4E3A;&#x771F;&#xFF09;</span>
+<span class="token builtin">all</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span>                   <span class="token comment"># True&#xFF08;&#x662F;&#x5426;&#x6240;&#x6709;&#x5143;&#x7D20;&#x4E3A;&#x771F;&#xFF09;</span>
+a<span class="token punctuation">.</span>append<span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">)</span>              <span class="token comment"># a: [1, 2, 3, 4]&#xFF08;&#x589E;&#x52A0;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#xFF09;</span>
+a<span class="token punctuation">.</span>pop<span class="token punctuation">(</span><span class="token punctuation">)</span>                  <span class="token comment"># &#x6BCF;&#x6267;&#x884C;&#x4E00;&#x6B21;&#xFF0C;&#x5220;&#x9664;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x5143;&#x7D20;</span>
+a<span class="token punctuation">.</span>extend<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">9</span><span class="token punctuation">,</span><span class="token number">8</span><span class="token punctuation">]</span><span class="token punctuation">)</span>          <span class="token comment"># a: [1, 2, 3, 9, 8]&#xFF08;&#x4E0E;&#x5176;&#x4ED6;&#x5217;&#x8868;&#x5408;&#x5E76;&#xFF09;</span>
+a<span class="token punctuation">.</span>insert<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">&apos;a&apos;</span><span class="token punctuation">)</span>         <span class="token comment"># a: [1, &apos;a&apos;, 2, 3]&#xFF08;&#x5728;&#x6307;&#x5B9A;&#x7D22;&#x5F15;&#x4F4D;&#x63D2;&#x5165;&#x5143;&#x7D20;&#xFF0C;&#x7D22;&#x5F15;&#x4ECE;0&#x5F00;&#x59CB;&#xFF09;</span>
+a<span class="token punctuation">.</span>remove<span class="token punctuation">(</span><span class="token string">&apos;a&apos;</span><span class="token punctuation">)</span>            <span class="token comment"># &#x5220;&#x9664;&#x7B2C;&#x4E00;&#x4E2A;&#x6307;&#x5B9A;&#x5143;&#x7D20;</span>
+</code></pre>
+<p><strong>&#x5E38;&#x7528;&#x7684;&#x5B57;&#x5178;&#x64CD;&#x4F5C;&#x65B9;&#x6CD5;&#xFF1A;</strong></p>
+<pre class="language-"><code class="lang-python">d<span class="token punctuation">.</span>pop<span class="token punctuation">(</span><span class="token string">&apos;name&apos;</span><span class="token punctuation">)</span>      <span class="token comment"># &apos;Tom&apos;&#xFF08;&#x5220;&#x9664;&#x6307;&#x5B9A;key&#xFF09;</span>
+d<span class="token punctuation">.</span>popitem<span class="token punctuation">(</span><span class="token punctuation">)</span>        <span class="token comment"># &#x968F;&#x673A;&#x5220;&#x9664;&#x67D0;&#x4E00;&#x9879;</span>
+<span class="token keyword">del</span> d<span class="token punctuation">[</span><span class="token string">&apos;name&apos;</span><span class="token punctuation">]</span>      <span class="token comment"># &#x5220;&#x9664;&#x952E;&#x503C;&#x5BF9;</span>
+d<span class="token punctuation">.</span>clear<span class="token punctuation">(</span><span class="token punctuation">)</span>          <span class="token comment"># &#x6E05;&#x7A7A;&#x5B57;&#x5178;</span>
+
+<span class="token comment"># &#x6309;&#x7C7B;&#x578B;&#x8BBF;&#x95EE;&#xFF0C;&#x53EF;&#x8FED;&#x4EE3;</span>
+d<span class="token punctuation">.</span>keys<span class="token punctuation">(</span><span class="token punctuation">)</span>           <span class="token comment"># &#x5217;&#x51FA;&#x6240;&#x6709;&#x952E;</span>
+d<span class="token punctuation">.</span>values<span class="token punctuation">(</span><span class="token punctuation">)</span>         <span class="token comment"># &#x5217;&#x51FA;&#x6240;&#x6709;&#x503C;</span>
+d<span class="token punctuation">.</span>items<span class="token punctuation">(</span><span class="token punctuation">)</span>          <span class="token comment"># &#x5217;&#x51FA;&#x6240;&#x6709;&#x952E;&#x503C;&#x5BF9;&#x5143;&#x7EC4;&#xFF08;k, v&#xFF09;</span>
+
+<span class="token comment"># &#x64CD;&#x4F5C;</span>
+d<span class="token punctuation">.</span>setdefault<span class="token punctuation">(</span><span class="token string">&apos;a&apos;</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span>  <span class="token comment"># &#x63D2;&#x5165;&#x4E00;&#x4E2A;&#x952E;&#x5E76;&#x7ED9;&#x5B9A;&#x9ED8;&#x8BA4;&#x503C;3&#xFF0C;&#x5982;&#x4E0D;&#x6307;&#x5B9A;&#xFF0C;&#x5219;&#x4E3A;None</span>
+d1<span class="token punctuation">.</span>update<span class="token punctuation">(</span>dict2<span class="token punctuation">)</span>      <span class="token comment"># &#x5C06;&#x5B57;&#x5178;dict2&#x7684;&#x952E;&#x503C;&#x5BF9;&#x6DFB;&#x52A0;&#x5230;&#x5B57;&#x5178;dict</span>
+<span class="token comment"># &#x5982;&#x679C;&#x952E;&#x5B58;&#x5728;&#xFF0C;&#x5219;&#x8FD4;&#x56DE;&#x5176;&#x5BF9;&#x5E94;&#x503C;&#xFF1B;&#x5982;&#x679C;&#x952E;&#x4E0D;&#x5728;&#x5B57;&#x5178;&#x4E2D;&#xFF0C;&#x5219;&#x8FD4;&#x56DE;&#x9ED8;&#x8BA4;&#x503C;</span>
+d<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token string">&apos;math&apos;</span><span class="token punctuation">,</span> <span class="token number">100</span><span class="token punctuation">)</span>   <span class="token comment"># 100</span>
+d2 <span class="token operator">=</span> d<span class="token punctuation">.</span>copy<span class="token punctuation">(</span><span class="token punctuation">)</span>        <span class="token comment"># &#x6DF1;&#x62F7;&#x8D1D;&#xFF0C;d&#x53D8;&#x5316;&#x4E0D;&#x5F71;&#x54CD;d2</span>
+</code></pre>
+<h2 id="12-pandas-&#x6570;&#x636E;&#x8BFB;&#x53D6;&#x4E0E;&#x8F93;&#x51FA;">1.2 Pandas &#x6570;&#x636E;&#x8BFB;&#x53D6;&#x4E0E;&#x8F93;&#x51FA;</h2>
+<p><img src="image/3-1.jpg" alt="image"></p>
+<p><strong>&#x5E38;&#x89C1;&#x7684;&#x6570;&#x636E;&#x683C;&#x5F0F;&#x8BFB;&#x53D6;&#x548C;&#x8F93;&#x51FA;&#x65B9;&#x6CD5;&#xFF1A;</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">&#x683C;&#x5F0F;</th>
+<th style="text-align:center">&#x6587;&#x4EF6;&#x683C;&#x5F0F;</th>
+<th style="text-align:center">&#x8BFB;&#x53D6;&#x51FD;&#x6570;</th>
+<th style="text-align:center">&#x5199;&#x5165;&#x51FD;&#x6570;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">binary</td>
+<td style="text-align:center">Excel</td>
+<td style="text-align:center">read_excel</td>
+<td style="text-align:center">to_excel</td>
+</tr>
+<tr>
+<td style="text-align:center">text</td>
+<td style="text-align:center">CSV</td>
+<td style="text-align:center">read_csv, read_table</td>
+<td style="text-align:center">to_csv</td>
+</tr>
+<tr>
+<td style="text-align:center">text</td>
+<td style="text-align:center">JSON</td>
+<td style="text-align:center">read_json</td>
+<td style="text-align:center">to_json</td>
+</tr>
+<tr>
+<td style="text-align:center">text</td>
+<td style="text-align:center">&#x7F51;&#x9875;HTML&#x8868;&#x683C;</td>
+<td style="text-align:center">read_html</td>
+<td style="text-align:center">to_html</td>
+</tr>
+<tr>
+<td style="text-align:center">text</td>
+<td style="text-align:center">&#x672C;&#x5730;&#x526A;&#x5207;&#x677F;</td>
+<td style="text-align:center">read_clipboard</td>
+<td style="text-align:center">to_clipboard</td>
+</tr>
+<tr>
+<td style="text-align:center">SQL</td>
+<td style="text-align:center">SQL&#x67E5;&#x8BE2;&#x6570;&#x636E;&#x5E93;</td>
+<td style="text-align:center">read_sql</td>
+<td style="text-align:center">to_sql</td>
+</tr>
+<tr>
+<td style="text-align:center">text</td>
+<td style="text-align:center">Markdown</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">to_markdonw</td>
+</tr>
+</tbody>
+</table>
+<p><strong>pd.read_csv()&#x57FA;&#x672C;&#x8BED;&#x6CD5;&#xFF1A;</strong></p>
+<pre class="language-"><code class="lang-python">pd<span class="token punctuation">.</span>read_csv<span class="token punctuation">(</span>filepath_or_buffer<span class="token punctuation">,</span> sep<span class="token operator">=</span><span class="token string">&apos;,&apos;</span><span class="token punctuation">,</span> delimiter<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">,</span> 
+            header<span class="token operator">=</span><span class="token string">&apos;infer&apos;</span><span class="token punctuation">,</span> skip_blank_lines<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span> name<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">,</span> 
+            nrows<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">,</span> index_col<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">,</span> usecols<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">,</span> squeeze<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">,</span> 
+            prefix<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">,</span> mangle_dupe_cols<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span> skiprows<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">,</span> 
+            skipfooter<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">,</span> na_values<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">,</span> date_parser<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">)</span>
+</code></pre>
+<ul>
+<li>filepath_or_buffer&#xFF1A;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;</li>
+<li>sep&#xFF1A;&#x4EE3;&#x8868;&#x6BCF;&#x884C;&#x6570;&#x636E;&#x5185;&#x5BB9;&#x7684;&#x5206;&#x5272;&#x7B26;&#x5408;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;&#x9017;&#x53F7;</li>
+<li>delimiter&#xFF1A;&#x5907;&#x9009;&#x5206;&#x9694;&#x7B26;&#xFF0C;&#x6548;&#x679C;&#x4E0E;sep&#x4E00;&#x6837;&#xFF0C;&#x5982;&#x679C;&#x6307;&#x5B9A;&#x8BE5;&#x53C2;&#x6570;&#xFF0C;&#x5219;sep&#x53C2;&#x6570;&#x5931;&#x6548;</li>
+<li>header&#xFF1A;&#x6307;&#x5B9A;&#x7B2C;&#x51E0;&#x884C;&#x662F;&#x8868;&#x5934;&#xFF0C;&#x9ED8;&#x8BA4;&#x4F1A;&#x81EA;&#x52A8;&#x628A;&#x7B2C;&#x4E00;&#x884C;&#x4F5C;&#x4E3A;&#x8868;&#x5934;&#xFF08;&#x6CE8;&#xFF1A;skip_blank_lines=True&#xFF0C;header&#x53C2;&#x6570;&#x5C06;&#x5FFD;&#x7565;&#x7A7A;&#x884C;&#x548C;&#x6CE8;&#x91CA;&#x884C;&#xFF0C;&#x56E0;&#x6B64;header=0&#x8868;&#x793A;&#x6570;&#x636E;&#x7B2C;&#x4E00;&#x884C;&#x800C;&#x975E;&#x6587;&#x4EF6;&#x7684;&#x7B2C;&#x4E00;&#x884C;&#xFF09;</li>
+<li>name&#xFF1A;&#x7528;&#x6765;&#x6307;&#x5B9A;&#x5217;&#x7684;&#x540D;&#x79F0;&#xFF0C;&#x5B83;&#x662F;&#x4E00;&#x4E2A;&#x7C7B;&#x4F3C;&#x5217;&#x8868;&#x7684;&#x5E8F;&#x5217;&#xFF0C;&#x4E0E;&#x6570;&#x636E;&#x4E00;&#x4E00;&#x5BF9;&#x5E94;</li>
+<li>nrows&#xFF1A;&#x6307;&#x5B9A;&#x9700;&#x8981;&#x8BFB;&#x53D6;&#x7684;&#x884C;&#x6570;</li>
+<li>index_col&#xFF1A;&#x7528;&#x6765;&#x6307;&#x5B9A;&#x7D22;&#x5F15;&#x5217;&#xFF0C;&#x53EF;&#x4EE5;&#x662F;&#x5217;&#x7D22;&#x5F15;&#x7684;&#x5217;&#x7F16;&#x53F7;&#x6216;&#x8005;&#x5217;&#x540D;&#xFF0C;&#x5982;&#x679C;&#x7ED9;&#x5B9A;&#x4E00;&#x4E2A;&#x5E8F;&#x5217;&#xFF0C;&#x5219;&#x6709;&#x591A;&#x4E2A;&#x884C;&#x7D22;&#x5F15;</li>
+<li>usecols&#xFF1A;&#x5982;&#x679C;&#x53EA;&#x4F7F;&#x7528;&#x6570;&#x636E;&#x90E8;&#x5206;&#x5217;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;usecols&#x6307;&#x5B9A;</li>
+<li>squeeze&#xFF1A;&#x8BBE;&#x7F6E;&#x4E3A;True&#xFF0C;&#x5982;&#x679C;&#x6587;&#x4EF6;&#x53EA;&#x5305;&#x542B;&#x4E00;&#x5217;&#xFF0C;&#x5219;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;Series&#xFF0C;&#x5982;&#x679C;&#x591A;&#x5217;&#xFF0C;&#x5219;&#x8FD4;&#x56DE;DataFrame</li>
+<li>prefix&#xFF1A;&#x5982;&#x679C;&#x539F;&#x59CB;&#x6570;&#x636E;&#x6CA1;&#x6709;&#x5217;&#x540D;&#xFF0C;&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x4E00;&#x4E2A;&#x524D;&#x7F00;&#x52A0;&#x5E8F;&#x6570;&#x540D;&#x79F0;&#xFF0C;&#x5982;c_1, c_2</li>
+<li>mangle_dupe_cols&#xFF1A;&#x5982;&#x679C;&#x8BE5;&#x53C2;&#x6570;&#x4E3A;True&#xFF0C;&#x5F53;&#x5217;&#x540D;&#x6709;&#x91CD;&#x590D;&#x65F6;&#xFF0C;&#x5217;&#x540D;&#x5C06;&#x53D8;&#x6210;X&#xFF0C;X.1&#xFF0C;...&#xFF0C;X.N</li>
+<li>skiprows&#xFF1A;&#x8DF3;&#x8FC7;&#x9700;&#x8981;&#x5FFD;&#x7565;&#x7684;&#x884C;&#x6570;&#xFF08;&#x4ECE;&#x6587;&#x4EF6;&#x5F00;&#x59CB;&#x5904;&#x7B97;&#x8D77;&#xFF09;&#x6216;&#x9700;&#x8981;&#x5FFD;&#x7565;&#x7684;&#x884C;&#x53F7;&#x5217;&#x8868;</li>
+<li>skipfooter&#xFF1A;&#x5C3E;&#x90E8;&#x8DF3;&#x8FC7;&#xFF0C;&#x4ECE;&#x6587;&#x4EF6;&#x5C3E;&#x90E8;&#x5F00;&#x59CB;&#x5FFD;&#x7565;</li>
+<li>na_values&#xFF1A;&#x7A7A;&#x503C;&#x66FF;&#x6362;NA/NaN</li>
+<li>date_parser&#xFF1A;&#x7528;&#x4E8E;&#x89E3;&#x6790;&#x65E5;&#x671F;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x9ED8;&#x8BA4;&#x4F7F;&#x7528;dateutil.parser.parser&#x6765;&#x505A;&#x8F6C;&#x6362;</li>
+</ul>
+<pre class="language-"><code class="lang-python"><span class="token keyword">from</span> io <span class="token keyword">import</span> StringIO
+data <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token string">&apos;a,b,c\n1,Yes,2\n3,No,4&apos;</span><span class="token punctuation">)</span>
+pd<span class="token punctuation">.</span>read_csv<span class="token punctuation">(</span>StringIO<span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">,</span>true_values<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">&apos;Yes&apos;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>false_values<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">&quot;No&quot;</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+<span class="token comment">#   a    b        c</span>
+<span class="token comment"># 0    1    True    2</span>
+<span class="token comment"># 1    3    False    4</span>
+</code></pre>
+<pre class="language-"><code class="lang-python">date_parser <span class="token operator">=</span> pd<span class="token punctuation">.</span>io<span class="token punctuation">.</span>date_converters<span class="token punctuation">.</span>parse_date_time
+date_parser <span class="token operator">=</span> <span class="token keyword">lambda</span> x<span class="token punctuation">:</span> pd<span class="token punctuation">.</span>to_datetime<span class="token punctuation">(</span>x<span class="token punctuation">,</span> utc<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span> <span class="token builtin">format</span><span class="token operator">=</span><span class="token string">&apos;%d%b%Y&apos;</span><span class="token punctuation">)</span>
+date_parser <span class="token operator">=</span> <span class="token keyword">lambda</span> d<span class="token punctuation">:</span> pd<span class="token punctuation">.</span>datetime<span class="token punctuation">.</span>strptime<span class="token punctuation">(</span>d<span class="token punctuation">,</span> <span class="token string">&apos;%d%b%Y&apos;</span><span class="token punctuation">)</span>
+<span class="token comment"># &#x4F7F;&#x7528;</span>
+pd<span class="token punctuation">.</span>read_csv<span class="token punctuation">(</span>data<span class="token punctuation">,</span> parse_dates<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">&apos;&#x5E74;&#x4EFD;&apos;</span><span class="token punctuation">]</span><span class="token punctuation">,</span> date_parser<span class="token operator">=</span>date_parser<span class="token punctuation">)</span>
+</code></pre>
+<p><em>parse_dates&#x53C2;&#x6570;&#x7528;&#x4E8E;&#x5BF9;&#x65F6;&#x95F4;&#x65E5;&#x671F;&#x8FDB;&#x884C;&#x89E3;&#x6790;</em></p>
+<pre class="language-"><code class="lang-python">pd<span class="token punctuation">.</span>read_csv<span class="token punctuation">(</span>data<span class="token punctuation">,</span> parse_dates<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>      <span class="token comment"># &#x81EA;&#x52A8;&#x89E3;&#x6790;&#x65E5;&#x671F;&#x65F6;&#x95F4;&#x683C;&#x5F0F;</span>
+pd<span class="token punctuation">.</span>read_csv<span class="token punctuation">(</span>data<span class="token punctuation">,</span> parse_dates<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">&apos;&#x5E74;&#x4EFD;&apos;</span><span class="token punctuation">]</span><span class="token punctuation">)</span>  <span class="token comment"># &#x6307;&#x5B9A;&#x65E5;&#x671F;&#x65F6;&#x95F4;&#x5B57;&#x6BB5;&#x8FDB;&#x884C;&#x89E3;&#x6790;</span>
+</code></pre>
+<p><strong>pd.read_excel&#x51FD;&#x6570;&#x57FA;&#x672C;&#x8BED;&#x6CD5;&#xFF1A;</strong></p>
+<pre class="language-"><code class="lang-python">pd<span class="token punctuation">.</span>read_excel<span class="token punctuation">(</span>io<span class="token punctuation">,</span> sheet_name<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">,</span> header<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">,</span>
+              names<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">,</span> index_col<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">,</span>
+              usecols<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">,</span> squeeze<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">,</span>
+              dtype<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">,</span> engine<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">,</span>
+              converters<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">,</span> true_values<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">,</span>
+              false_values<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">,</span> skiprows<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">,</span>
+              nrows<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">,</span> na_values<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">,</span>
+              keep_default_na<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span> verbose<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">,</span>
+              parse_dates<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">,</span> date_parser<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">,</span>
+              thousands<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">,</span> comment<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">,</span> skipfooter<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">,</span>
+              convert_float<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span> mangle_dupe_cols<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span> <span class="token operator">**</span>kwds<span class="token punctuation">)</span>
+</code></pre>
+<h2 id="13-pandas&#x57FA;&#x672C;&#x64CD;&#x4F5C;">1.3 Pandas&#x57FA;&#x672C;&#x64CD;&#x4F5C;</h2>
+<p><strong>&#xFF08;1&#xFF09;&#x5EFA;&#x7ACB;&#x7D22;&#x5F15;</strong></p>
+<pre class="language-"><code class="lang-python">data <span class="token operator">=</span> <span class="token string">&apos;https://www.gairuo.com/file/data/dataset/team.xlsx&apos;</span>
+df <span class="token operator">=</span> pd<span class="token punctuation">.</span>read_excel<span class="token punctuation">(</span>data<span class="token punctuation">)</span>
+df<span class="token punctuation">.</span>set_index<span class="token punctuation">(</span><span class="token string">&apos;name&apos;</span><span class="token punctuation">)</span>   <span class="token comment"># &#x8BBE;&#x7F6E;&#x7D22;&#x5F15;</span>
+df<span class="token punctuation">.</span>set_index<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">&apos;name&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;team&apos;</span><span class="token punctuation">]</span><span class="token punctuation">)</span>   <span class="token comment"># &#x8BBE;&#x7F6E;&#x4E24;&#x5C42;&#x7D22;&#x5F15;</span>
+
+df<span class="token punctuation">.</span>set_index<span class="token punctuation">(</span><span class="token string">&apos;name&apos;</span><span class="token punctuation">,</span> inplace<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>   <span class="token comment"># &#x8BBE;&#x7F6E;&#x7D22;&#x5F15;&#x5E76;&#x4FEE;&#x6539;&#x539F;df&#x53D8;&#x91CF;&#x6570;&#x636E;</span>
+</code></pre>
+<p><strong>&#x6CE8;&#x610F;&#xFF1A;</strong> &#x5728;&#x4EE5;&#x4E0A;&#x64CD;&#x4F5C;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x5E76;&#x6CA1;&#x6709;&#x4FEE;&#x6539;&#x539F;&#x6765;&#x7684;df&#x53D8;&#x91CF;&#x4E2D;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x5982;&#x679C;&#x5E0C;&#x671B;&#x7528;&#x8BBE;&#x7F6E;&#x7D22;&#x5F15;&#x540E;&#x7684;&#x6570;&#x636E;&#x66FF;&#x6362;&#x539F;&#x6765;df&#x53D8;&#x91CF;&#x4E2D;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x8FDB;&#x884C;&#x8D4B;&#x503C;&#x64CD;&#x4F5C;&#x6216;&#x8005;&#x4F20;&#x5165;<strong>inplace</strong>&#x53C2;&#x6570;&#x3002;</p>
+<p>&#x6709;&#x65F6;&#x6211;&#x4EEC;&#x60F3;&#x53D6;&#x6D88;&#x5DF2;&#x6709;&#x7684;&#x7D22;&#x5F15;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;df.reset_index()&#xFF0C;<strong>&#x91CD;&#x7F6E;&#x7D22;&#x5F15;</strong></p>
+<pre class="language-"><code class="lang-python">df<span class="token punctuation">.</span>reset_index<span class="token punctuation">(</span><span class="token punctuation">)</span>   <span class="token comment"># &#x6E05;&#x9664;&#x7D22;&#x5F15;</span>
+df<span class="token punctuation">.</span>reset_index<span class="token punctuation">(</span>drop<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">,</span>inplace<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">)</span>
+</code></pre>
+<p><strong>&#x65F6;&#x95F4;&#x7D22;&#x5F15;&#xFF1A;</strong>&#x65F6;&#x5E8F;&#x6570;&#x636E;&#xFF0C;date_range()&#xFF0C;period_range()</p>
+<pre class="language-"><code class="lang-python"><span class="token comment"># &#x4ECE;&#x4E00;&#x4E2A;&#x65E5;&#x671F;&#x8FDE;&#x7EED;&#x5230;&#x53E6;&#x4E00;&#x4E2A;&#x65E5;&#x671F;</span>
+pd<span class="token punctuation">.</span>date_range<span class="token punctuation">(</span>start<span class="token operator">=</span><span class="token string">&apos;1/1/2018&apos;</span><span class="token punctuation">,</span> end<span class="token operator">=</span><span class="token string">&apos;1/08/2018&apos;</span><span class="token punctuation">)</span>
+<span class="token comment"># &#x6307;&#x5B9A;&#x5F00;&#x59CB;&#x65F6;&#x95F4;&#x548C;&#x5468;&#x671F;</span>
+pd<span class="token punctuation">.</span>date_range<span class="token punctuation">(</span>start<span class="token operator">=</span><span class="token string">&apos;1/1/2018&apos;</span><span class="token punctuation">,</span> periods<span class="token operator">=</span><span class="token number">8</span><span class="token punctuation">)</span>
+<span class="token comment"># &#x4EE5;&#x6708;&#x4E3A;&#x5468;&#x671F;</span>
+pd<span class="token punctuation">.</span>period_range<span class="token punctuation">(</span>start<span class="token operator">=</span><span class="token string">&apos;2017-01-01&apos;</span><span class="token punctuation">,</span> end<span class="token operator">=</span><span class="token string">&apos;2018-01-01&apos;</span><span class="token punctuation">,</span> freq<span class="token operator">=</span><span class="token string">&apos;M&apos;</span><span class="token punctuation">)</span>
+<span class="token comment"># &#x5468;&#x671F;&#x5D4C;&#x5957;</span>
+pd<span class="token punctuation">.</span>period_range<span class="token punctuation">(</span>start<span class="token operator">=</span>pd<span class="token punctuation">.</span>Period<span class="token punctuation">(</span><span class="token string">&apos;2017Q1&apos;</span><span class="token punctuation">,</span> freq<span class="token operator">=</span><span class="token string">&apos;Q&apos;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+                end<span class="token operator">=</span>pd<span class="token punctuation">.</span>Period<span class="token punctuation">(</span><span class="token string">&apos;2017Q2&apos;</span><span class="token punctuation">,</span> freq<span class="token operator">=</span><span class="token string">&apos;Q&apos;</span><span class="token punctuation">)</span><span class="token punctuation">,</span> freq<span class="token operator">=</span><span class="token string">&apos;M&apos;</span><span class="token punctuation">)</span>
+</code></pre>
+<p><strong>&#xFF08;2&#xFF09;&#x6570;&#x636E;&#x4FE1;&#x606F;</strong></p>
+<p>Pandas&#x63D0;&#x4F9B;&#x4E86;&#x4E09;&#x4E2A;&#x5E38;&#x7528;&#x7684;&#x6837;&#x5F0F;&#x67E5;&#x770B;&#x65B9;&#x6CD5;&#x3002;</p>
+<pre class="language-"><code class="lang-python">df<span class="token punctuation">.</span>head<span class="token punctuation">(</span><span class="token punctuation">)</span>     <span class="token comment"># &#x524D;&#x90E8;&#x6570;&#x636E;&#xFF0C;&#x9ED8;&#x8BA4;5&#x6761;&#xFF0C;&#x53EF;&#x6307;&#x5B9A;&#x6761;&#x6570;&#x3002;</span>
+df<span class="token punctuation">.</span>tail<span class="token punctuation">(</span><span class="token punctuation">)</span>     <span class="token comment"># &#x5C3E;&#x90E8;&#x6570;&#x636E;&#xFF0C;&#x9ED8;&#x8BA4;5&#x6761;&#xFF0C;&#x53EF;&#x6307;&#x5B9A;&#x6761;&#x6570;&#x3002;</span>
+df<span class="token punctuation">.</span>sample<span class="token punctuation">(</span><span class="token punctuation">)</span>   <span class="token comment"># &#x4E00;&#x6761;&#x968F;&#x673A;&#x6570;&#x636E;&#xFF0C;&#x53EF;&#x6307;&#x5B9A;&#x6761;&#x6570;&#x3002;</span>
+</code></pre>
+<p><strong>&#xFF08;3&#xFF09;&#x7EDF;&#x8BA1;&#x8BA1;&#x7B97;</strong></p>
+<p><code>df.describe()</code> &#x63CF;&#x8FF0;&#x6027;&#x7EDF;&#x8BA1;&#xFF0C;&#x4F1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x6709;&#x591A;&#x884C;&#x7684;&#x6240;&#x6709;&#x6570;&#x5B57;&#x5217;&#x7684;&#x7EDF;&#x8BA1;&#x8868;&#xFF0C;&#x6BCF;&#x4E00;&#x884C;&#x5BF9;&#x5E94;&#x4E00;&#x4E2A;&#x7EDF;&#x8BA1;&#x6307;&#x6807;&#xFF0C;&#x6709;&#x603B;&#x6570;&#x3001;&#x5E73;&#x5747;&#x6570;&#x3001;&#x6807;&#x51C6;&#x5DEE;&#x3001;&#x6700;&#x5C0F;&#x503C;&#x3001;&#x56DB;&#x5206;&#x4F4D;&#x6570;&#x3001;&#x6700;&#x5927;&#x503C;&#x7B49;&#xFF0C;&#x8FD9;&#x4E2A;&#x8868;&#x5BF9;&#x6211;&#x4EEC;&#x521D;&#x6B65;&#x4E86;&#x89E3;&#x6570;&#x636E;&#x5F88;&#x6709;&#x5E2E;&#x52A9;&#x3002;</p>
+<p><code>df.round()</code> &#x56DB;&#x820D;&#x4E94;&#x5165;&#xFF0C;<code>df.value_counts(normalize=True)</code> &#x91CD;&#x590D;&#x503C;&#x9891;&#x7387;&#xFF0C;<code>df.unique()</code> &#x53BB;&#x91CD;&#x503C;array&#xFF0C;<code>df.is_unique()</code> &#x662F;&#x5426;&#x6709;&#x91CD;&#x590D;</p>
+<pre class="language-"><code class="lang-python">df<span class="token punctuation">.</span><span class="token builtin">round</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>   <span class="token comment"># &#x6307;&#x5B9A;&#x5B57;&#x6BB5;&#x4FDD;&#x7559;2&#x4F4D;&#x5C0F;&#x6570;</span>
+df<span class="token punctuation">.</span><span class="token builtin">round</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token string">&apos;Q1&apos;</span><span class="token punctuation">:</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token string">&apos;Q2&apos;</span><span class="token punctuation">:</span><span class="token number">0</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+s<span class="token punctuation">.</span>nlargest<span class="token punctuation">(</span><span class="token punctuation">)</span>    <span class="token comment"># &#x6700;&#x5927;&#x7684;&#x524D;5&#x4E2A;</span>
+s<span class="token punctuation">.</span>nlargest<span class="token punctuation">(</span><span class="token number">15</span><span class="token punctuation">)</span>  <span class="token comment"># &#x6700;&#x5927;&#x7684;&#x524D;15&#x4E2A;</span>
+s<span class="token punctuation">.</span>nsmallest<span class="token punctuation">(</span><span class="token punctuation">)</span>   <span class="token comment"># &#x6700;&#x5C0F;&#x7684;&#x524D;5&#x4E2A;</span>
+s<span class="token punctuation">.</span>nsmallest<span class="token punctuation">(</span><span class="token number">15</span><span class="token punctuation">)</span> <span class="token comment"># &#x6700;&#x5C0F;&#x7684;&#x524D;15&#x4E2A;</span>
+</code></pre>
+<p><strong>&#xFF08;4&#xFF09;&#x4F4D;&#x7F6E;&#x8BA1;&#x7B97;</strong></p>
+<p>diff()&#x548C;shift()&#x7ECF;&#x5E38;&#x7528;&#x6765;&#x8BA1;&#x7B97;&#x6570;&#x636E;&#x7684;&#x589E;&#x91CF;&#x53D8;&#x5316;&#xFF0C;rank()&#x7528;&#x6765;&#x751F;&#x6210;&#x6570;&#x636E;&#x7684;&#x6574;&#x4F53;&#x6392;&#x540D;&#x3002;df.diff()&#x53EF;&#x4EE5;&#x505A;&#x4F4D;&#x79FB;&#x5DEE;&#x64CD;&#x4F5C;&#xFF0C;&#x7ECF;&#x5E38;&#x7528;&#x6765;&#x8BA1;&#x7B97;&#x4E00;&#x4E2A;&#x5E8F;&#x5217;&#x6570;&#x636E;&#x4E2D;&#x4E0A;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x548C;&#x4E0B;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x4E4B;&#x95F4;&#x7684;&#x5DEE;&#x503C;&#xFF0C;&#x5982;&#x589E;&#x91CF;&#x7814;&#x7A76;&#x3002;shift()&#x53EF;&#x4EE5;&#x5BF9;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x79FB;&#x4F4D;&#xFF0C;&#x4E0D;&#x505A;&#x4EFB;&#x4F55;&#x8BA1;&#x7B97;&#xFF0C;&#x4E5F;&#x652F;&#x6301;&#x4E0A;&#x4E0B;&#x5DE6;&#x53F3;&#x79FB;&#x52A8;&#xFF0C;&#x79FB;&#x52A8;&#x540E;&#x76EE;&#x6807;&#x4F4D;&#x7F6E;&#x7684;&#x7C7B;&#x578B;&#x65E0;&#x6CD5;&#x63A5;&#x6536;&#x7684;&#x4E3A;NaN&#x3002;rank()&#x53EF;&#x4EE5;&#x751F;&#x6210;&#x6570;&#x636E;&#x7684;&#x6392;&#x5E8F;&#x503C;&#x66FF;&#x6362;&#x6389;&#x539F;&#x6765;&#x7684;&#x6570;&#x636E;&#x503C;&#xFF0C;&#x5B83;&#x652F;&#x6301;&#x5BF9;&#x6240;&#x6709;&#x7C7B;&#x578B;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x6392;&#x5E8F;&#x3002;</p>
+<h2 id="14-&#x6570;&#x636E;&#x9009;&#x62E9;">1.4 &#x6570;&#x636E;&#x9009;&#x62E9;</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">&#x64CD;  &#x4F5C;</th>
+<th style="text-align:center">&#x8BED;  &#x6CD5;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">&#x9009;&#x62E9;&#x5217;</td>
+<td style="text-align:center">df[col]</td>
+</tr>
+<tr>
+<td style="text-align:center">&#x6309;&#x7D22;&#x5F15;&#x9009;&#x62E9;&#x884C;</td>
+<td style="text-align:center">df.loc[label]</td>
+</tr>
+<tr>
+<td style="text-align:center">&#x6309;&#x7167;&#x6570;&#x5B57;&#x7D22;&#x5F15;&#x9009;&#x62E9;&#x884C;</td>
+<td style="text-align:center">df.iloc[loc]</td>
+</tr>
+<tr>
+<td style="text-align:center">&#x4F7F;&#x7528;&#x5207;&#x7247;&#x9009;&#x62E9;&#x884C;</td>
+<td style="text-align:center">df[5:10]</td>
+</tr>
+<tr>
+<td style="text-align:center">&#x4F7F;&#x7528;&#x8868;&#x8FBE;&#x5F0F;&#x7B5B;&#x9009;&#x884C;</td>
+<td style="text-align:center">df[bool_vec]</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#xFF08;1&#xFF09;&#x5207;&#x7247;</strong></p>
+<p><code>df.loc</code>&#x3001;<code>df.iloc</code> [&lt;&#x884C;&#x8868;&#x8FBE;&#x5F0F;&gt;,&lt;&#x5217;&#x8868;&#x8FBE;&#x5F0F;&gt;]</p>
+<p>&#x53D6;&#x5177;&#x4F53;&#x503C;<code>df.at[], df.iat[]</code> </p>
+<p><strong>&#xFF08;2&#xFF09;&#x83B7;&#x5F97;&#x6570;&#x636E;<code>df.git</code></strong> &#xFF0C;&#x53EF;&#x4EE5;&#x505A;&#x7C7B;&#x4F3C;&#x5B57;&#x5178;&#x7684;&#x64CD;&#x4F5C;&#xFF0C;&#x5982;&#x679C;&#x65E0;&#x503C;&#xFF0C;&#x5219;&#x8FD4;&#x56DE;&#x9ED8;&#x8BA4;&#x503C;&#xFF08;&#x4E0B;&#x4F8B;&#x4E2D;&#x662F;0&#xFF09;&#x3002;&#x683C;&#x5F0F;&#x4E3A;<code>df.get(key, default=None)</code>&#xFF0C;&#x5982;&#x679C;&#x662F;DataFrame&#xFF0C;key&#x9700;&#x8981;&#x4F20;&#x5165;&#x5217;&#x540D;&#xFF0C;&#x8FD4;&#x56DE;&#x7684;&#x662F;&#x6B64;&#x5217;&#x7684;Series&#xFF1B;&#x5982;&#x679C;&#x662F;Series&#xFF0C;&#x9700;&#x8981;&#x4F20;&#x5165;&#x7D22;&#x5F15;&#xFF0C;&#x8FD4;&#x56DE;&#x7684;&#x662F;&#x4E00;&#x4E2A;&#x5B9A;&#x503C;&#x3002;</p>
+<p><strong>&#xFF08;3&#xFF09;&#x6570;&#x636E;&#x622A;&#x53D6;<code>df.truncate</code></strong> &#xFF0C;&#x53EF;&#x4EE5;&#x5BF9;DataFrame&#x548C;Series&#x8FDB;&#x884C;&#x622A;&#x53D6;&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;&#x7D22;&#x5F15;&#x4F20;&#x5165;before&#x548C;after&#x53C2;&#x6570;&#xFF0C;&#x5C06;&#x8FD9;&#x4E2A;&#x533A;&#x95F4;&#x4EE5;&#x5916;&#x7684;&#x6570;&#x636E;&#x5254;&#x9664;</p>
+<pre class="language-"><code class="lang-python">df<span class="token punctuation">.</span>truncate<span class="token punctuation">(</span>before<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">,</span>after<span class="token operator">=</span><span class="token number">5</span><span class="token punctuation">)</span>
+<span class="token comment"># name    team    Q1    Q2    Q3    Q4</span>
+<span class="token comment"># 2    Ack    A    57    60    18    84</span>
+<span class="token comment"># 3    Eorge    C    93    96    71    78</span>
+<span class="token comment"># 4    Oah    D    65    49    61    86</span>
+<span class="token comment"># 5    Harlie    C    24    13    87    43</span>
+</code></pre>
+<pre class="language-"><code class="lang-python">df<span class="token punctuation">.</span>ne<span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token comment"># &#x4E0D;&#x7B49;&#x4E8E; !=</span>
+df<span class="token punctuation">.</span>le<span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token comment"># &#x5C0F;&#x4E8E;&#x7B49;&#x4E8E; &lt;=</span>
+df<span class="token punctuation">.</span>lt<span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token comment"># &#x5C0F;&#x4E8E; &lt;</span>
+df<span class="token punctuation">.</span>ge<span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token comment"># &#x5927;&#x4E8E;&#x7B49;&#x4E8E; &gt;=</span>
+df<span class="token punctuation">.</span>gt<span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token comment"># &#x5927;&#x4E8E; &gt;</span>
+</code></pre>
+<p>&#x53E6;&#x5916;&#x8FD8;&#x6709;&#x4E00;&#x4E2A;<code>df.isin()</code>&#x51FD;&#x6570;&#xFF0C;&#x7528;&#x4E8E;&#x5224;&#x65AD;&#x6570;&#x636E;&#x662F;&#x5426;&#x5305;&#x542B;&#x6307;&#x5B9A;&#x5185;&#x5BB9;&#x3002;&#x53EF;&#x4EE5;&#x4F20;&#x5165;&#x4E00;&#x4E2A;&#x5217;&#x8868;&#xFF0C;<strong>&#x539F;&#x6570;&#x636E;&#x53EA;&#x9700;&#x8981;&#x6EE1;&#x8DB3;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#x5B58;&#x5728;&#x5373;&#x53EF;</strong>&#xFF1B;&#x4E5F;&#x53EF;&#x4EE5;&#x4F20;&#x5165;&#x4E00;&#x4E2A;&#x5B57;&#x5178;&#xFF0C;&#x952E;&#x4E3A;&#x5217;&#x540D;&#xFF0C;&#x503C;&#x4E3A;&#x9700;&#x8981;&#x5339;&#x914D;&#x7684;&#x503C;&#xFF0C;&#x4EE5;&#x5B9E;&#x73B0;&#x6309;&#x5217;&#x4E2A;&#x6027;&#x5316;&#x5339;&#x914D;&#x5B58;&#x5728;&#x503C;&#x3002;</p>
+<pre class="language-"><code class="lang-python">df<span class="token punctuation">[</span>df<span class="token punctuation">.</span>team<span class="token punctuation">.</span>isin<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">&apos;A&apos;</span><span class="token punctuation">,</span><span class="token string">&apos;B&apos;</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">]</span>                       <span class="token comment"># &#x5305;&#x542B;A&#x3001;B&#x4E24;&#x7EC4;&#x7684;</span>
+df<span class="token punctuation">[</span>df<span class="token punctuation">.</span>isin<span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token string">&apos;team&apos;</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">&apos;C&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;D&apos;</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token string">&apos;Q1&apos;</span><span class="token punctuation">:</span><span class="token punctuation">[</span><span class="token number">36</span><span class="token punctuation">,</span><span class="token number">93</span><span class="token punctuation">]</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">]</span>   <span class="token comment"># &#x590D;&#x6742;&#x67E5;&#x8BE2;&#xFF0C;&#x5176;&#x4ED6;&#x503C;&#x4E3A;NaN</span>
+</code></pre>
+<p><strong>&#xFF08;4&#xFF09;&#x67E5;&#x8BE2;<code>df.query(expr)</code></strong>&#x4F7F;&#x7528;&#x5E03;&#x5C14;&#x8868;&#x8FBE;&#x5F0F;&#x67E5;&#x8BE2;DataFrame&#x7684;&#x5217;&#xFF0C;&#x8868;&#x8FBE;&#x5F0F;&#x662F;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x7C7B;&#x4F3C;&#x4E8E;SQL&#x4E2D;&#x7684;where&#x4ECE;&#x53E5;&#xFF0C;&#x4E0D;&#x8FC7;&#x5B83;&#x76F8;&#x5F53;&#x7075;&#x6D3B;&#x3002;<strong>&#x8FD8;&#x652F;&#x6301;&#x4F7F;&#x7528;@&#x7B26;&#x5F15;&#x5165;&#x53D8;&#x91CF;&#x3002;</strong></p>
+<pre class="language-"><code class="lang-python">df<span class="token punctuation">.</span>query<span class="token punctuation">(</span><span class="token string">&quot;Q1&gt;Q2&gt;80&quot;</span><span class="token punctuation">)</span>   <span class="token comment"># &#x76F4;&#x63A5;&#x5199;&#x7C7B;&#x578B;SQL where&#x8BED;&#x53E5;</span>
+df<span class="token punctuation">.</span>query<span class="token punctuation">(</span><span class="token string">&apos;(Q1&lt;50) &amp; (Q2&gt;40) and (Q3&gt;90)&apos;</span><span class="token punctuation">)</span>
+<span class="token comment"># &#x652F;&#x6301;&#x4F20;&#x5165;&#x53D8;&#x91CF;&#xFF0C;&#x5982;&#x5927;&#x4E8E;&#x5E73;&#x5747;&#x5206;40&#x5206;</span>
+a <span class="token operator">=</span> df<span class="token punctuation">.</span>Q1<span class="token punctuation">.</span>mean<span class="token punctuation">(</span><span class="token punctuation">)</span>
+df<span class="token punctuation">.</span>query<span class="token punctuation">(</span><span class="token string">&apos;Q1 &gt; @a + 40&apos;</span><span class="token punctuation">)</span>
+</code></pre>
+<p><code>df.eval()</code>&#x4E0E;<code>df.query()</code>&#x7C7B;&#x4F3C;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x8868;&#x8FBE;&#x5F0F;&#x7B5B;&#x9009;&#xFF1A;</p>
+<pre class="language-"><code class="lang-python">df<span class="token punctuation">[</span>df<span class="token punctuation">.</span><span class="token builtin">eval</span><span class="token punctuation">(</span><span class="token string">&quot;Q1 &gt; 90 &gt; Q3 &gt; 10 &quot;</span><span class="token punctuation">)</span><span class="token punctuation">]</span>
+df<span class="token punctuation">[</span>df<span class="token punctuation">.</span><span class="token builtin">eval</span><span class="token punctuation">(</span><span class="token string">&quot;Q1 &gt; Q2 + @a&quot;</span><span class="token punctuation">)</span><span class="token punctuation">]</span>
+</code></pre>
+<p><strong>&#xFF08;5&#xFF09;&#x7B5B;&#x9009;<code>df.filter()</code></strong> &#x53EF;&#x4EE5;&#x5BF9;&#x884C;&#x540D;&#x548C;&#x5217;&#x540D;&#x8FDB;&#x884C;&#x7B5B;&#x9009;&#xFF0C;&#x652F;&#x6301;&#x6A21;&#x7CCA;&#x5339;&#x914D;&#x3001;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x3002;</p>
+<pre class="language-"><code class="lang-python">df<span class="token punctuation">.</span><span class="token builtin">filter</span><span class="token punctuation">(</span>items<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">&apos;Q1&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;Q2&apos;</span><span class="token punctuation">]</span><span class="token punctuation">)</span>  <span class="token comment"># &#x9009;&#x62E9;&#x4E24;&#x5217;</span>
+df<span class="token punctuation">.</span><span class="token builtin">filter</span><span class="token punctuation">(</span>regex<span class="token operator">=</span><span class="token string">&apos;Q&apos;</span><span class="token punctuation">,</span> axis<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span>   <span class="token comment"># &#x5217;&#x540D;&#x5305;&#x542B;Q&#x7684;&#x5217;</span>
+df<span class="token punctuation">.</span><span class="token builtin">filter</span><span class="token punctuation">(</span>regex<span class="token operator">=</span><span class="token string">&apos;e$&apos;</span><span class="token punctuation">,</span> axis<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span>  <span class="token comment"># &#x4EE5;e&#x7ED3;&#x5C3E;&#x7684;&#x5217;</span>
+df<span class="token punctuation">.</span><span class="token builtin">filter</span><span class="token punctuation">(</span>regex<span class="token operator">=</span><span class="token string">&apos;1$&apos;</span><span class="token punctuation">,</span> axis<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">)</span>  <span class="token comment"># &#x6B63;&#x5219;&#xFF0C;&#x7D22;&#x5F15;&#x540D;&#x4EE5;1&#x7ED3;&#x5C3E;</span>
+df<span class="token punctuation">.</span><span class="token builtin">filter</span><span class="token punctuation">(</span>like<span class="token operator">=</span><span class="token string">&apos;2&apos;</span><span class="token punctuation">,</span> axis<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">)</span>    <span class="token comment"># &#x7D22;&#x5F15;&#x4E2D;&#x6709;2&#x7684;</span>
+<span class="token comment"># &#x7D22;&#x5F15;&#x4E2D;&#x4EE5;2&#x5F00;&#x5934;&#x3001;&#x5217;&#x540D;&#x6709;Q&#x7684;</span>
+df<span class="token punctuation">.</span><span class="token builtin">filter</span><span class="token punctuation">(</span>regex<span class="token operator">=</span><span class="token string">&apos;^2&apos;</span><span class="token punctuation">,</span> axis<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token builtin">filter</span><span class="token punctuation">(</span>like<span class="token operator">=</span><span class="token string">&apos;Q&apos;</span><span class="token punctuation">,</span> axis<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span>
+</code></pre>
+<p>Pandas&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x6309;&#x5217;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x7B5B;&#x9009;&#x7684;&#x529F;&#x80FD;<code>df.select_dtypes(include=None, exclude=None)</code>&#xFF0C;&#x5B83;&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x5305;&#x542B;&#x548C;&#x4E0D;&#x5305;&#x542B;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#xFF0C;&#x5982;&#x679C;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x7C7B;&#x578B;&#xFF0C;&#x4F20;&#x5165;&#x5B57;&#x7B26;&#xFF1B;&#x5982;&#x679C;&#x6709;&#x591A;&#x4E2A;&#x7C7B;&#x578B;&#xFF0C;&#x4F20;&#x5165;&#x5217;&#x8868;&#x3002;</p>
+<p><strong>&#xFF08;6&#xFF09;&#x6307;&#x5B9A;&#x7C7B;&#x578B;<code>pd.to_XXX</code></strong>&#xFF0C;&#x7CFB;&#x7EDF;&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x5C06;&#x6570;&#x636E;&#x5B89;&#x5168;&#x8F6C;&#x6362;&#xFF0C;errors&#x53C2;&#x6570;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x65E0;&#x6CD5;&#x8F6C;&#x6362;&#x5219;&#x8F6C;&#x6362;&#x4E3A;&#x515C;&#x5E95;&#x7C7B;&#x578B;&#xFF1A;</p>
+<pre class="language-"><code class="lang-python"><span class="token comment"># &#x6309;&#x5927;&#x4F53;&#x7C7B;&#x578B;&#x63A8;&#x5B9A;</span>
+m <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">&apos;1&apos;</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span>
+s <span class="token operator">=</span> pd<span class="token punctuation">.</span>to_numeric<span class="token punctuation">(</span>s<span class="token punctuation">)</span>   <span class="token comment"># &#x8F6C;&#x6210;&#x6570;&#x5B57;</span>
+pd<span class="token punctuation">.</span>to_datetime<span class="token punctuation">(</span>m<span class="token punctuation">)</span>      <span class="token comment"># &#x8F6C;&#x6210;&#x65F6;&#x95F4;</span>
+pd<span class="token punctuation">.</span>to_timedelta<span class="token punctuation">(</span>m<span class="token punctuation">)</span>     <span class="token comment"># &#x8F6C;&#x6210;&#x65F6;&#x95F4;&#x5DEE;</span>
+pd<span class="token punctuation">.</span>to_datetime<span class="token punctuation">(</span>m<span class="token punctuation">,</span> errors<span class="token operator">=</span><span class="token string">&apos;coerce&apos;</span><span class="token punctuation">)</span>            <span class="token comment"># &#x9519;&#x8BEF;&#x5904;&#x7406;</span>
+pd<span class="token punctuation">.</span>to_numeric<span class="token punctuation">(</span>m<span class="token punctuation">,</span> errors<span class="token operator">=</span><span class="token string">&apos;ignore&apos;</span><span class="token punctuation">)</span>
+pd<span class="token punctuation">.</span>to_numeric<span class="token punctuation">(</span>m errors<span class="token operator">=</span><span class="token string">&apos;coerce&apos;</span><span class="token punctuation">)</span><span class="token punctuation">.</span>fillna<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>    <span class="token comment"># &#x515C;&#x5E95;&#x586B;&#x5145;</span>
+pd<span class="token punctuation">.</span>to_datetime<span class="token punctuation">(</span>df<span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token string">&apos;year&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;month&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;day&apos;</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">)</span>  <span class="token comment"># &#x7EC4;&#x5408;&#x6210;&#x65E5;&#x671F;</span>
+</code></pre>
+<p><strong>&#xFF08;7&#xFF09;&#x7D22;&#x5F15;&#x6392;&#x5E8F;<code>df.sort_index()</code></strong>&#xFF0C;&#x5B9E;&#x73B0;&#x6309;&#x7D22;&#x5F15;&#x6392;&#x5E8F;&#xFF0C;&#x9ED8;&#x8BA4;&#x4EE5;&#x4ECE;&#x5C0F;&#x5230;&#x5927;&#x7684;&#x5347;&#x5E8F;&#x65B9;&#x5F0F;&#x6392;&#x5217;&#x3002;&#x5982;&#x5E0C;&#x671B;&#x6309;&#x964D;&#x5E8F;&#x6392;&#x5E8F;&#xFF0C;&#x4F20;&#x5165;<code>ascending=False</code>&#xFF1B;&#x6570;&#x636E;&#x503C;&#x7684;&#x6392;&#x5E8F;&#x4E3B;&#x8981;&#x4F7F;&#x7528;<strong><code>sort_values()</code></strong>&#xFF0C;&#x6570;&#x5B57;&#x6309;&#x5927;&#x5C0F;&#x987A;&#x5E8F;&#xFF0C;&#x5B57;&#x7B26;&#x6309;&#x5B57;&#x6BCD;&#x987A;&#x5E8F;&#x3002;Series&#x548C;DataFrame&#x90FD;&#x652F;&#x6301;&#x6B64;&#x65B9;&#x6CD5;&#x3002;</p>
+<p><strong>&#xFF08;8&#xFF09;&#x6DF7;&#x5408;&#x6392;&#x5E8F;</strong>&#xFF0C;&#x6709;&#x65F6;&#x5019;&#x9700;&#x8981;&#x7528;&#x7D22;&#x5F15;&#x548C;&#x6570;&#x636E;&#x503C;&#x6DF7;&#x5408;&#x6392;&#x5E8F;&#x3002;&#x4E0B;&#x4F8B;&#x4E2D;&#x5047;&#x5982;name&#x662F;&#x7D22;&#x5F15;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5148;&#x6309;team&#x6392;&#x540D;&#xFF0C;&#x518D;&#x6309;&#x7D22;&#x5F15;&#x6392;&#x540D;</p>
+<pre class="language-"><code class="lang-python">df<span class="token punctuation">.</span>set_index<span class="token punctuation">(</span><span class="token string">&apos;name&apos;</span><span class="token punctuation">,</span> inplace<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>    <span class="token comment"># &#x8BBE;&#x7F6E;name&#x4E3A;&#x7D22;&#x5F15;</span>
+df<span class="token punctuation">.</span>index<span class="token punctuation">.</span>names <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">&apos;s_name&apos;</span><span class="token punctuation">]</span>           <span class="token comment"># &#x7ED9;&#x7D22;&#x5F15;&#x8D77;&#x540D;</span>
+df<span class="token punctuation">.</span>sort_values<span class="token punctuation">(</span>by<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">&apos;s_name&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;team&apos;</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token comment"># &#x6392;&#x5E8F;</span>
+</code></pre>
+<p><strong>&#xFF08;9&#xFF09;&#x6309;&#x503C;&#x5927;&#x5C0F;&#x6392;&#x5E8F;</strong>&#xFF0C;<code>nsmallest()</code>&#x548C;<code>nlargest()</code>&#x7528;&#x6765;&#x5B9E;&#x73B0;&#x6570;&#x5B57;&#x5217;&#x7684;&#x6392;&#x5E8F;&#xFF0C;&#x5E76;&#x53EF;&#x6307;&#x5B9A;&#x8FD4;&#x56DE;&#x7684;&#x4E2A;&#x6570;&#xFF1A;</p>
+<pre class="language-"><code class="lang-python"><span class="token comment"># &#x5148;&#x6309;Q1&#x6700;&#x5C0F;&#x5728;&#x524D;&#xFF0C;&#x5982;&#x679C;&#x76F8;&#x540C;&#xFF0C;Q2&#x5C0F;&#x7684;&#x5728;&#x524D;</span>
+df<span class="token punctuation">.</span>nsmallest<span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">&apos;Q1&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;Q2&apos;</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token triple-quoted-string string">&apos;&apos;&apos;
+         name team  Q1  Q2  Q3  Q4
+37  Sebastian    C   1  14  68  48
+85       Liam    B   2  80  24  25
+39     Harley    B   2  99  12  13
+82       Finn    E   4   1  55  32
+58      Lewis    B   4  34  77  28
+&apos;&apos;&apos;</span>
+<span class="token comment"># &#x4EE5;&#x4E0A;&#x663E;&#x793A;&#x4E86;&#x524D;5&#x4E2A;&#x6700;&#x5C0F;&#x7684;&#x503C;&#xFF0C;&#x4EC5;&#x652F;&#x6301;&#x6570;&#x5B57;&#x7C7B;&#x578B;&#x7684;&#x6392;&#x5E8F;&#x3002;</span>
+</code></pre>
+<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> By Wuyuexin </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> <i>updated</i> 2024-08-20 17:55:12 </span> </footer>
+						
+					</section>
+					
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+				</div>
+			</div>
+			
+		</div>
+
+		
+		
+		<a href="chapter2/chapter2_sub_02.html" class="navigation navigation-prev " aria-label="Previous page: 2.2Numpy科学计算">
+			<i class="fa fa-angle-left"></i>
+		</a>
+		
+		
+		<a href="chapter4.html" class="navigation navigation-next " aria-label="Next page: 4. Python Matplotlib">
+			<i class="fa fa-angle-right"></i>
+		</a>
+		
+		
+		
+	</div>
+	<script>
+		var gitbook = gitbook || [];
+		gitbook.push(function() {
+			gitbook.page.hasChanged({"page":{"title":"3. Python Pandas","level":"1.4","depth":1,"next":{"title":"4. Python Matplotlib","level":"1.5","depth":1,"path":"chapter4.md","ref":"chapter4.md","articles":[]},"previous":{"title":"2.2Numpy科学计算","level":"1.3.2","depth":2,"path":"chapter2/chapter2_sub_02.md","ref":"chapter2/chapter2_sub_02.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters","chapter-fold","-copy-code-button","code","page-footer-ex","-anchor-navigation-ex","expandable-chapters-small","prism","-highlight","-lunr","search","-search-pro","splitter","-sharing","-insert-logo","hide-element","-page-treeview","sectionx","-popup","-lightbox","theme-fexa","-theme-comscore","auto-scroll-table"],"ignores":["_book","node_modules"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"page-treeview":{"copyright":"","minHeaderCount":"2","minHeaderDeep":"2"},"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"flow":"typescript"}},"page-footer-ex":{"copyright":"By Wuyuexin","markdown":true,"update_label":"<i>updated</i>","update_format":"YYYY-MM-DD HH:mm:ss"},"splitter":{},"search":{},"auto-scroll-table":{},"theme-fexa":{"search-placeholder":"输入关键字搜索","logo":"./image/logo.png","favicon":"./favicon.ico"},"code":{"copyButtons":false},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"family":"Microsoft YaHei","size":12},"sectionx":{"tag":"b"},"anchor-navigation-ex":{"showLevel":false,"showGoTop":false},"expandable-chapters-small":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"url":"","style":"background: none; max-height: 80px; min-height: 80px"},"expandable-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"themeFexa":{"nav":[{"url":"/","target":"_blank","name":"简易教程"}]}},"title":"学习笔记","language":"zh-hans","gitbook":"*"},"file":{"path":"chapter3.md","mtime":"2024-08-20T09:55:12.718Z","type":"markdown"},"gitbook":{"version":"3.0.0","time":"2024-08-22T01:50:47.903Z"},"basePath":".","book":{"language":""}});
+		});
+	</script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sectionx/sectionx.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-theme-fexa/fexa.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-auto-scroll-table/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/buttons.js"></script>
+        
+    
+
+    </body>
+</html>
+

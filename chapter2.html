@@ -1,0 +1,1364 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <title>2. Python Numpy · 学习笔记</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.0.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-page-footer-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-sectionx/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-theme-fexa/fexa.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-auto-scroll-table/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="chapter2/chapter2_sub_01.html" />
+    
+    
+    <link rel="prev" href="chapter1.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+	<div class="header-inner">
+		<!-- LOGO -->
+		<div class="logo"></div>
+		<span class="title"></span>
+
+		<!-- Search -->
+		
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+
+		<!-- Nav -->
+		<ul class="header-nav">
+			<li>
+				<a href="/" target="_blank">简易教程</a>
+			</li>
+		</ul>
+	</div>
+
+	<div class="book-summary">
+		<div class="book-summary-title">文档目录</div>
+		
+		
+		<nav role="navigation">
+			
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="chapter1.html">
+            
+                <a href="chapter1.html">
+            
+                    
+                    1. GetBook使用教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3" data-path="chapter2.html">
+            
+                <a href="chapter2.html">
+            
+                    
+                    2. Python Numpy
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="chapter2/chapter2_sub_01.html">
+            
+                <a href="chapter2/chapter2_sub_01.html">
+            
+                    
+                    2.1 Numpy基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="chapter2/chapter2_sub_02.html">
+            
+                <a href="chapter2/chapter2_sub_02.html">
+            
+                    
+                    2.2Numpy科学计算
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="chapter3.html">
+            
+                <a href="chapter3.html">
+            
+                    
+                    3. Python Pandas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="chapter4.html">
+            
+                <a href="chapter4.html">
+            
+                    
+                    4. Python Matplotlib
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="chapter5.html">
+            
+                <a href="chapter5.html">
+            
+                    
+                    5. Git教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+		</nav>
+		
+		
+	</div>
+
+	<!-- Content nav -->
+	<div class="book-anchor">
+		<div class="book-anchor-title">在这篇文章中:</div>
+		<div class="book-anchor-body">
+
+		</div>
+	</div>
+
+	<div class="book-body">
+		
+		<div class="body-inner">
+			
+			
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >2. Python Numpy</a>
+    </h1>
+</div>
+
+
+
+
+			<div class="page-wrapper" tabindex="-1" role="main">
+				<div class="page-inner">
+					
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+					<section class="normal markdown-section">
+						
+						<h1 id="1-numpy&#x57FA;&#x7840;">1. NumPy&#x57FA;&#x7840;</h1>
+<h2 id="11-ndarray-&#x5BF9;&#x8C61;">1.1 Ndarray &#x5BF9;&#x8C61;</h2>
+<p>NumPy &#x6700;&#x91CD;&#x8981;&#x7684;&#x4E00;&#x4E2A;&#x7279;&#x70B9;&#x662F;&#x5176; N &#x7EF4;&#x6570;&#x7EC4;&#x5BF9;&#x8C61; ndarray&#xFF0C;&#x8BE5;&#x5BF9;&#x8C61;&#x662F;&#x4E00;&#x4E2A;&#x5FEB;&#x901F;&#x800C;&#x7075;&#x6D3B;&#x7684;&#x5927;&#x6570;&#x636E;&#x96C6;&#x5BB9;&#x5668;&#xFF0C;&#x63CF;&#x8FF0;&#x76F8;&#x540C;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x7684;&#x5143;&#x7D20;&#x96C6;&#x5408;&#xFF0C;&#x4EE5; 0 &#x4E0B;&#x6807;&#x4E3A;&#x5F00;&#x59CB;&#x8FDB;&#x884C;&#x96C6;&#x5408;&#x4E2D;&#x5143;&#x7D20;&#x7684;&#x7D22;&#x5F15;&#x3002;</p>
+<pre class="language-"><code class="lang-python">numpy<span class="token punctuation">.</span>array<span class="token punctuation">(</span><span class="token builtin">object</span><span class="token punctuation">,</span> dtype <span class="token operator">=</span> <span class="token boolean">None</span><span class="token punctuation">,</span> copy <span class="token operator">=</span> <span class="token boolean">True</span><span class="token punctuation">,</span> order <span class="token operator">=</span> <span class="token boolean">None</span><span class="token punctuation">,</span> subok <span class="token operator">=</span> <span class="token boolean">False</span><span class="token punctuation">,</span> ndmin <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">)</span>
+</code></pre>
+<h2 id="12-numpy-&#x6570;&#x636E;&#x7C7B;&#x578B;">1.2 NumPy &#x6570;&#x636E;&#x7C7B;&#x578B;</h2>
+<p>numpy &#x652F;&#x6301;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;(dtype)&#x6BD4; Python &#x5185;&#x7F6E;&#x7684;&#x7C7B;&#x578B;&#x8981;&#x591A;&#x5F88;&#x591A;&#xFF0C;&#x57FA;&#x672C;&#x4E0A;&#x53EF;&#x4EE5;&#x548C; C &#x8BED;&#x8A00;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x5BF9;&#x5E94;&#x4E0A;&#xFF0C;&#x5176;&#x4E2D;&#x90E8;&#x5206;&#x7C7B;&#x578B;&#x5BF9;&#x5E94;&#x4E3A; Python &#x5185;&#x7F6E;&#x7684;&#x7C7B;&#x578B;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>&#x540D;&#x79F0;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>bool_</td>
+<td>&#x5E03;&#x5C14;&#x578B;&#x6570;&#x636E;&#x7C7B;&#x578B;&#xFF08;True &#x6216;&#x8005; False&#xFF09;</td>
+</tr>
+<tr>
+<td>int_</td>
+<td>&#x9ED8;&#x8BA4;&#x7684;&#x6574;&#x6570;&#x7C7B;&#x578B;&#xFF08;&#x7C7B;&#x4F3C;&#x4E8E; C &#x8BED;&#x8A00;&#x4E2D;&#x7684; long&#xFF0C;int32 &#x6216; int64&#xFF09;</td>
+</tr>
+<tr>
+<td>intc</td>
+<td>&#x4E0E; C &#x7684; int &#x7C7B;&#x578B;&#x4E00;&#x6837;&#xFF0C;&#x4E00;&#x822C;&#x662F; int32 &#x6216; int 64</td>
+</tr>
+<tr>
+<td>intp</td>
+<td>&#x7528;&#x4E8E;&#x7D22;&#x5F15;&#x7684;&#x6574;&#x6570;&#x7C7B;&#x578B;&#xFF08;&#x7C7B;&#x4F3C;&#x4E8E; C &#x7684; ssize_t&#xFF0C;&#x4E00;&#x822C;&#x60C5;&#x51B5;&#x4E0B;&#x4ECD;&#x7136;&#x662F; int32 &#x6216; int64&#xFF09;</td>
+</tr>
+<tr>
+<td>int8</td>
+<td>&#x5B57;&#x8282;&#xFF08;-128 to 127&#xFF09;</td>
+</tr>
+<tr>
+<td>int16</td>
+<td>&#x6574;&#x6570;&#xFF08;-32768 to 32767&#xFF09;</td>
+</tr>
+<tr>
+<td>int32</td>
+<td>&#x6574;&#x6570;&#xFF08;-2147483648 to 2147483647&#xFF09;</td>
+</tr>
+<tr>
+<td>int64</td>
+<td>&#x6574;&#x6570;&#xFF08;-9223372036854775808 to 9223372036854775807&#xFF09;</td>
+</tr>
+<tr>
+<td>uint8</td>
+<td>&#x65E0;&#x7B26;&#x53F7;&#x6574;&#x6570;&#xFF08;0 to 255&#xFF09;</td>
+</tr>
+<tr>
+<td>uint16</td>
+<td>&#x65E0;&#x7B26;&#x53F7;&#x6574;&#x6570;&#xFF08;0 to 65535&#xFF09;</td>
+</tr>
+<tr>
+<td>uint32</td>
+<td>&#x65E0;&#x7B26;&#x53F7;&#x6574;&#x6570;&#xFF08;0 to 4294967295&#xFF09;</td>
+</tr>
+<tr>
+<td>uint64</td>
+<td>&#x65E0;&#x7B26;&#x53F7;&#x6574;&#x6570;&#xFF08;0 to 18446744073709551615&#xFF09;</td>
+</tr>
+<tr>
+<td>float_</td>
+<td>float64 &#x7C7B;&#x578B;&#x7684;&#x7B80;&#x5199;</td>
+</tr>
+<tr>
+<td>float16</td>
+<td>&#x534A;&#x7CBE;&#x5EA6;&#x6D6E;&#x70B9;&#x6570;&#xFF0C;&#x5305;&#x62EC;&#xFF1A;1 &#x4E2A;&#x7B26;&#x53F7;&#x4F4D;&#xFF0C;5 &#x4E2A;&#x6307;&#x6570;&#x4F4D;&#xFF0C;10 &#x4E2A;&#x5C3E;&#x6570;&#x4F4D;</td>
+</tr>
+<tr>
+<td>float32</td>
+<td>&#x5355;&#x7CBE;&#x5EA6;&#x6D6E;&#x70B9;&#x6570;&#xFF0C;&#x5305;&#x62EC;&#xFF1A;1 &#x4E2A;&#x7B26;&#x53F7;&#x4F4D;&#xFF0C;8 &#x4E2A;&#x6307;&#x6570;&#x4F4D;&#xFF0C;23 &#x4E2A;&#x5C3E;&#x6570;&#x4F4D;</td>
+</tr>
+<tr>
+<td>float64</td>
+<td>&#x53CC;&#x7CBE;&#x5EA6;&#x6D6E;&#x70B9;&#x6570;&#xFF0C;&#x5305;&#x62EC;&#xFF1A;1 &#x4E2A;&#x7B26;&#x53F7;&#x4F4D;&#xFF0C;11 &#x4E2A;&#x6307;&#x6570;&#x4F4D;&#xFF0C;52 &#x4E2A;&#x5C3E;&#x6570;&#x4F4D;</td>
+</tr>
+<tr>
+<td>complex_</td>
+<td>complex128 &#x7C7B;&#x578B;&#x7684;&#x7B80;&#x5199;&#xFF0C;&#x5373; 128 &#x4F4D;&#x590D;&#x6570;</td>
+</tr>
+<tr>
+<td>complex64</td>
+<td>&#x590D;&#x6570;&#xFF0C;&#x8868;&#x793A;&#x53CC; 32 &#x4F4D;&#x6D6E;&#x70B9;&#x6570;&#xFF08;&#x5B9E;&#x6570;&#x90E8;&#x5206;&#x548C;&#x865A;&#x6570;&#x90E8;&#x5206;&#xFF09;</td>
+</tr>
+<tr>
+<td>complex128</td>
+<td>&#x590D;&#x6570;&#xFF0C;&#x8868;&#x793A;&#x53CC; 64 &#x4F4D;&#x6D6E;&#x70B9;&#x6570;&#xFF08;&#x5B9E;&#x6570;&#x90E8;&#x5206;&#x548C;&#x865A;&#x6570;&#x90E8;&#x5206;&#xFF09;</td>
+</tr>
+</tbody>
+</table>
+<p>&#x5B57;&#x8282;&#x987A;&#x5E8F;&#x662F;&#x901A;&#x8FC7;&#x5BF9;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x9884;&#x5148;&#x8BBE;&#x5B9A;&#x201D;&lt;&#x201C;&#x6216;&#x201D;&gt;&#x201D;&#x6765;&#x51B3;&#x5B9A;&#x7684;&#x3002;&#x201D;&lt;&#x201C;&#x610F;&#x5473;&#x7740;&#x5C0F;&#x7AEF;&#x6CD5;(&#x6700;&#x9AD8;&#x6709;&#x6548;&#x5B57;&#x8282;&#x5728;&#x6700;&#x524D;&#x9762;&#x7684;&#x65B9;&#x5F0F;&#x79F0;&#x4E3A;&#x5927;&#x7AEF;&#x6CD5;)&#x3002;&#x201D;&gt;&#x201D;&#x610F;&#x5473;&#x7740;&#x5927;&#x7AEF;&#x6CD5;(&#x6700;&#x4F4E;&#x6709;&#x6548;&#x5B57;&#x8282;&#x5728;&#x6700;&#x524D;&#x9762;&#x7684;&#x65B9;&#x5F0F;&#x6210;&#x4E3A;&#x5C0F;&#x7AEF;&#x6CD5;)&#x3002;</p>
+<p><img src="D:\Gitbook\Python_notebook\image\&#x6570;&#x636E;&#x7C7B;&#x578B;&#x7B80;&#x79F0;.png" alt=""></p>
+<h2 id="13-numpy-&#x6570;&#x636E;&#x7C7B;&#x578B;&#x8F6C;&#x6362;">1.3 Numpy &#x6570;&#x636E;&#x7C7B;&#x578B;&#x8F6C;&#x6362;</h2>
+<p>numpy&#x4E2D;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#xFF0C;&#x4E0D;&#x80FD;&#x76F4;&#x63A5;&#x6539;&#x539F;&#x6570;&#x636E;&#x7684;dtype&#xFF0C;&#x53EA;&#x80FD;&#x7528;&#x51FD;&#x6570;astype()&#x3002;</p>
+<pre class="language-"><code class="lang-python"><span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
+a<span class="token operator">=</span>np<span class="token punctuation">.</span>random<span class="token punctuation">.</span>random <span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">)</span>
+a<span class="token punctuation">.</span>dtype <span class="token operator">=</span><span class="token string">&quot;float32&quot;</span>
+</code></pre>
+<h2 id="14-numpy-&#x6570;&#x7EC4;&#x5C5E;&#x6027;">1.4 NumPy &#x6570;&#x7EC4;&#x5C5E;&#x6027;</h2>
+<table>
+<thead>
+<tr>
+<th>&#x5C5E;&#x6027;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ndarray.ndim</td>
+<td>&#x79E9;&#xFF0C;&#x5373;&#x8F74;&#x7684;&#x6570;&#x91CF;&#x6216;&#x7EF4;&#x5EA6;&#x7684;&#x6570;&#x91CF;</td>
+</tr>
+<tr>
+<td>ndarray.shape</td>
+<td>&#x6570;&#x7EC4;&#x7684;&#x7EF4;&#x5EA6;&#xFF0C;&#x5BF9;&#x4E8E;&#x77E9;&#x9635;,n&#x884C;m&#x5217;</td>
+</tr>
+<tr>
+<td>ndarray.size</td>
+<td>&#x6570;&#x7EC4;&#x5143;&#x7D20;&#x7684;&#x603B;&#x4E2A;&#x6570;&#xFF0C;&#x76F8;&#x5F53;&#x4E8E; shape&#x4E2D;n*m&#x7684;&#x503C;</td>
+</tr>
+<tr>
+<td>ndarray.dtype</td>
+<td>ndarray&#x5BF9;&#x8C61;&#x7684;&#x5143;&#x7D20;&#x7C7B;&#x578B;</td>
+</tr>
+<tr>
+<td>ndarray.itemsize</td>
+<td>ndarray&#x5BF9;&#x8C61;&#x4E2D;&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#x7684;&#x5927;&#x5C0F;&#xFF0C;&#x4EE5;&#x5B57;&#x8282;&#x4E3A;&#x5355;&#x4F4D;</td>
+</tr>
+<tr>
+<td>ndarray.flags</td>
+<td>ndarray&#x5BF9;&#x8C61;&#x7684;&#x5185;&#x5B58;&#x4FE1;&#x606F;</td>
+</tr>
+<tr>
+<td>ndarray.real</td>
+<td>ndarray&#x5143;&#x7D20;&#x7684;&#x5B9E;&#x90E8;</td>
+</tr>
+<tr>
+<td>ndarray.imag</td>
+<td>ndarray&#x5143;&#x7D20;&#x7684;&#x865A;&#x90E8;</td>
+</tr>
+<tr>
+<td>ndarray.data</td>
+<td>&#x5305;&#x542B;&#x5B9E;&#x9645;&#x6570;&#x7EC4;&#x5143;&#x7D20;&#x7684;&#x7F13;&#x51B2;&#x533A;&#xFF0C;&#x7531;&#x4E8E;&#x4E00;&#x822C;&#x901A;&#x8FC7;&#x6570;&#x7EC4;&#x7684;&#x7D22;&#x5F15;&#x83B7;&#x53D6;&#x5143;&#x7D20;&#xFF0C;&#x6240;&#x4EE5;&#x901A;&#x5E38;&#x4E0D;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x5C5E;&#x6027;</td>
+</tr>
+</tbody>
+</table>
+<h1 id="2-numpy-&#x521B;&#x5EFA;&#x6570;&#x7EC4;">2. NumPy &#x521B;&#x5EFA;&#x6570;&#x7EC4;</h1>
+<p>&#x521B;&#x5EFA;&#x6570;&#x7EC4;&#x6700;&#x7B80;&#x5355;&#x7684;&#x65B9;&#x6CD5;&#x5C31;&#x662F;&#x4F7F;&#x7528;numpy.array&#x51FD;&#x6570;,&#x5B83;&#x63A5;&#x6536;&#x4E00;&#x5207;&#x5E8F;&#x5217;&#x578B;&#x7684;&#x5BF9;&#x8C61;&#xFF08;&#x5305;&#x62EC;&#x5176;&#x4ED6;&#x6570;&#x7EC4;&#xFF09;&#xFF0C;&#x7136;&#x540E;&#x4EA7;&#x751F;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x542B;&#x6709;&#x4F20;&#x5165;&#x6570;&#x636E;&#x7684;Numpy&#x6570;&#x7EC4;&#x3002;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;numpy.zeros&#xFF0C;numpy.empty&#xFF0C;numpy.ones&#xFF0C;numpy.arange&#xFF0C;numpy.eys&#x7B49;&#x521B;&#x5EFA;&#x6570;&#x7EC4;&#x3002;</p>
+<pre class="language-"><code class="lang-python"><span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
+ndarray1 <span class="token operator">=</span> np<span class="token punctuation">.</span>array<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+ndarray2 <span class="token operator">=</span> np<span class="token punctuation">.</span>array<span class="token punctuation">(</span><span class="token builtin">list</span><span class="token punctuation">(</span><span class="token string">&apos;abcdefg&apos;</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+ndarray3 <span class="token operator">=</span> np<span class="token punctuation">.</span>array<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token number">11</span><span class="token punctuation">,</span> <span class="token number">22</span><span class="token punctuation">,</span> <span class="token number">33</span><span class="token punctuation">,</span> <span class="token number">44</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">,</span> <span class="token number">30</span><span class="token punctuation">,</span> <span class="token number">40</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+</code></pre>
+<h2 id="21-numpyzeros&#x548C;zeroslike&#x521B;&#x5EFA;&#x6570;&#x7EC4;">2.1 numpy.zeros&#x548C;zeros_like&#x521B;&#x5EFA;&#x6570;&#x7EC4;</h2>
+<p>&#x6570;&#x7EC4;&#x5143;&#x7D20;&#x9ED8;&#x8BA4;&#x503C;&#x662F;0. &#x6CE8;&#x610F;:zeros_linke&#x51FD;&#x6570;&#x53EA;&#x662F;&#x6839;&#x636E;&#x4F20;&#x5165;&#x7684;ndarray&#x6570;&#x7EC4;&#x7684;shape&#x6765;&#x521B;&#x5EFA;&#x6240;&#x6709;&#x5143;&#x7D20;&#x4E3A;0&#x7684;&#x6570;&#x7EC4;&#xFF0C;<strong>&#x5E76;&#x4E0D;&#x662F;&#x62F7;&#x8D1D;&#x6E90;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x6570;&#x636E;</strong></p>
+<pre class="language-"><code class="lang-python">numpy<span class="token punctuation">.</span>zeros<span class="token punctuation">(</span>shape<span class="token punctuation">,</span> dtype <span class="token operator">=</span> <span class="token builtin">float</span><span class="token punctuation">,</span> order <span class="token operator">=</span> <span class="token string">&apos;C&apos;</span><span class="token punctuation">)</span>
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>shape</td>
+<td>&#x6570;&#x7EC4;&#x5F62;&#x72B6;</td>
+</tr>
+<tr>
+<td>dtype</td>
+<td>&#x6570;&#x636E;&#x7C7B;&#x578B;,&#x53EF;&#x9009;</td>
+</tr>
+<tr>
+<td>order</td>
+<td>&#x6709;&quot;C&quot;&#x548C;F&quot;&#x4E24;&#x4E2A;&#x9009;&#x9879;&#x5206;&#x522B;&#x4EE3;&#x8868;&#xFF0C;&#x884C;&#x4F18;&#x5148;&#x548C;&#x5217;&#x4F18;&#x5148;&#xFF0C;&#x5728;&#x8BA1;&#x7B97;&#x673A;&#x5185;&#x5B58;&#x4E2D;&#x7684;&#x5B58;&#x50A8;&#x5143;&#x7D20;&#x7684;&#x987A;&#x5E8F;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>numpy.empty&#x548C;empty_like&#x3001;numpy.ones&#x548C;ones_like&#x521B;&#x5EFA;&#x6570;&#x7EC4;&#xFF0C;&#x7528;&#x6CD5;&#x76F8;&#x540C;</strong></p>
+<h2 id="22-numpyfromiter">2.2 numpy.fromiter</h2>
+<p>numpy.fromiter &#x65B9;&#x6CD5;&#x4ECE;&#x53EF;&#x8FED;&#x4EE3;&#x5BF9;&#x8C61;&#x4E2D;&#x5EFA;&#x7ACB; ndarray &#x5BF9;&#x8C61;&#xFF0C;&#x8FD4;&#x56DE;&#x4E00;&#x7EF4;&#x6570;&#x7EC4;&#x3002;</p>
+<pre class="language-"><code class="lang-python">numpy<span class="token punctuation">.</span>fromiter<span class="token punctuation">(</span>iterable<span class="token punctuation">,</span> dtype<span class="token punctuation">,</span> count<span class="token operator">=</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span>
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>iterable</td>
+<td>&#x53EF;&#x8FED;&#x4EE3;&#x5BF9;&#x8C61;</td>
+</tr>
+<tr>
+<td>dtype</td>
+<td>&#x6570;&#x636E;&#x7C7B;&#x578B;,&#x53EF;&#x9009;</td>
+</tr>
+<tr>
+<td>count</td>
+<td>&#x8BFB;&#x53D6;&#x7684;&#x6570;&#x636E;&#x6570;&#x91CF;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;-1&#xFF0C;&#x8BFB;&#x53D6;&#x6240;&#x6709;&#x6570;&#x636E;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="23-numpy-&#x4ECE;&#x6570;&#x503C;&#x8303;&#x56F4;&#x521B;&#x5EFA;&#x6570;&#x7EC4;">2.3 numpy &#x4ECE;&#x6570;&#x503C;&#x8303;&#x56F4;&#x521B;&#x5EFA;&#x6570;&#x7EC4;</h2>
+<p>&#x53EF;&#x4EE5;&#x4F7F;&#x7528;,numpy.arange&#x6839;&#x636E;&#x6307;&#x5B9A;&#x8303;&#x56F4;&#x521B;&#x5EFA;&#x6570;&#x7EC4;&#xFF0C;numpy.linspace&#x521B;&#x5EFA;&#x7B49;&#x6BD4;&#x6570;&#x5217;&#x6570;&#x7EC4;&#xFF0C;numpy.logspace&#x521B;&#x5EFA;&#x7B49;&#x5DEE;&#x6570;&#x5217;&#x6570;&#x7EC4;&#x3002;</p>
+<pre class="language-"><code class="lang-python">np<span class="token punctuation">.</span>arange<span class="token punctuation">(</span>start<span class="token punctuation">,</span> stop<span class="token punctuation">,</span> step<span class="token punctuation">,</span> dtype<span class="token punctuation">)</span>
+np<span class="token punctuation">.</span>linspace<span class="token punctuation">(</span>start<span class="token punctuation">,</span> stop<span class="token punctuation">,</span> num<span class="token operator">=</span><span class="token number">50</span><span class="token punctuation">,</span> endpoint<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span> retstep<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">,</span> dtype<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">)</span>
+np<span class="token punctuation">.</span>logspace<span class="token punctuation">(</span>start<span class="token punctuation">,</span> stop<span class="token punctuation">,</span> num<span class="token operator">=</span><span class="token number">50</span><span class="token punctuation">,</span> endpoint<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span> base<span class="token operator">=</span><span class="token number">10.0</span><span class="token punctuation">,</span> dtype<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">)</span>
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>start</td>
+<td>&#x5E8F;&#x5217;&#x7684;&#x8D77;&#x59CB;&#x503C;</td>
+</tr>
+<tr>
+<td>stop</td>
+<td>&#x5E8F;&#x5217;&#x7684;&#x7EC8;&#x6B62;&#x503C;&#xFF0C;&#x5982;&#x679C;endpoint&#x4E3A;true&#xFF0C;&#x8BE5;&#x503C;&#x5305;&#x542B;&#x4E8E;&#x6570;&#x5217;&#x4E2D;</td>
+</tr>
+<tr>
+<td>num</td>
+<td>&#x8981;&#x751F;&#x6210;&#x7684;&#x7B49;&#x6B65;&#x957F;&#x7684;&#x6837;&#x672C;&#x6570;&#x91CF;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;50</td>
+</tr>
+<tr>
+<td>endpoint</td>
+<td>&#x8BE5;&#x503C;&#x4E3A; ture &#x65F6;&#xFF0C;&#x6570;&#x5217;&#x4E2D;&#x4E2D;&#x5305;&#x542B;stop&#x503C;&#xFF0C;&#x53CD;&#x4E4B;&#x4E0D;&#x5305;&#x542B;&#xFF0C;&#x9ED8;&#x8BA4;&#x662F;True&#x3002;</td>
+</tr>
+<tr>
+<td>base</td>
+<td>&#x5BF9;&#x6570; log &#x7684;&#x5E95;&#x6570;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;10&#x7684;&#x5E95;&#x3002;</td>
+</tr>
+<tr>
+<td>dtype</td>
+<td>ndarray &#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;</td>
+</tr>
+</tbody>
+</table>
+<h1 id="3-numpy-&#x5207;&#x7247;&#x548C;&#x7D22;&#x5F15;">3. numpy &#x5207;&#x7247;&#x548C;&#x7D22;&#x5F15;</h1>
+<p>ndarray&#x5BF9;&#x8C61;&#x7684;&#x5185;&#x5BB9;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x7D22;&#x5F15;&#x6216;&#x5207;&#x7247;&#x6765;&#x8BBF;&#x95EE;&#x548C;&#x4FEE;&#x6539;&#xFF0C;&#x4E0E; Python &#x4E2D; list &#x7684;&#x5207;&#x7247;&#x64CD;&#x4F5C;&#x4E00;&#x6837;&#x3002;ndarray &#x6570;&#x7EC4;&#x53EF;&#x4EE5;&#x57FA;&#x4E8E; 0 &#x2013; n &#x7684;&#x4E0B;&#x6807;&#x8FDB;&#x884C;&#x7D22;&#x5F15;&#xFF0C;&#x5207;&#x7247;&#x5BF9;&#x8C61;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5185;&#x7F6E;&#x7684; slice &#x51FD;&#x6570;&#xFF0C;&#x5E76;&#x8BBE;&#x7F6E; start, stop &#x53CA; step &#x53C2;&#x6570;&#x8FDB;&#x884C;&#xFF0C;&#x4ECE;&#x539F;&#x6570;&#x7EC4;&#x4E2D;&#x5207;&#x5272;&#x51FA;&#x4E00;&#x4E2A;&#x65B0;&#x6570;&#x7EC4;&#x3002;</p>
+<pre class="language-"><code class="lang-python">a <span class="token operator">=</span> np<span class="token punctuation">.</span>array<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">)</span>  
+<span class="token keyword">print</span> <span class="token punctuation">(</span>a<span class="token punctuation">[</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span>   <span class="token comment"># &#x7B2C;2&#x5217;&#x5143;&#x7D20;</span>
+<span class="token keyword">print</span> <span class="token punctuation">(</span>a<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">]</span><span class="token punctuation">)</span>   <span class="token comment"># &#x7B2C;2&#x884C;&#x5143;&#x7D20;</span>
+<span class="token keyword">print</span> <span class="token punctuation">(</span>a<span class="token punctuation">[</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">:</span><span class="token punctuation">]</span><span class="token punctuation">)</span>  <span class="token comment"># &#x7B2C;2&#x5217;&#x53CA;&#x5269;&#x4E0B;&#x7684;&#x6240;&#x6709;&#x5143;&#x7D20;</span>
+</code></pre>
+<h2 id="31-&#x5176;&#x4ED6;&#x7D22;&#x5F15;&#x65B9;&#x5F0F;">3.1 &#x5176;&#x4ED6;&#x7D22;&#x5F15;&#x65B9;&#x5F0F;</h2>
+<p>NumPy &#x6BD4;&#x4E00;&#x822C;&#x7684; Python &#x5E8F;&#x5217;&#x63D0;&#x4F9B;&#x66F4;&#x591A;&#x7684;&#x7D22;&#x5F15;&#x65B9;&#x5F0F;&#x3002;&#x9664;&#x4E86;&#x4E4B;&#x524D;&#x770B;&#x5230;&#x7684;&#x7528;&#x6574;&#x6570;&#x548C;&#x5207;&#x7247;&#x7684;&#x7D22;&#x5F15;&#x5916;&#xFF0C;&#x6570;&#x7EC4;&#x53EF;&#x4EE5;&#x7531;&#x6574;&#x6570;&#x6570;&#x7EC4;&#x7D22;&#x5F15;&#x3001;&#x5E03;&#x5C14;&#x7D22;&#x5F15;&#x53CA;&#x82B1;&#x5F0F;&#x7D22;&#x5F15;&#x3002;</p>
+<pre class="language-"><code class="lang-python">x1 <span class="token operator">=</span> np<span class="token punctuation">.</span>array<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span>  <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span>  <span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">,</span>  <span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">,</span>  <span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">,</span>  <span class="token number">6</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">)</span> 
+y1 <span class="token operator">=</span> x<span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span>  <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">]</span>  
+<span class="token comment"># y1:  [1  4  5]</span>
+
+x2 <span class="token operator">=</span> np<span class="token punctuation">.</span>array<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">[</span>  <span class="token number">0</span><span class="token punctuation">,</span>  <span class="token number">1</span><span class="token punctuation">,</span>  <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token punctuation">[</span>  <span class="token number">3</span><span class="token punctuation">,</span>  <span class="token number">4</span><span class="token punctuation">,</span>  <span class="token number">5</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token punctuation">[</span>  <span class="token number">6</span><span class="token punctuation">,</span>  <span class="token number">7</span><span class="token punctuation">,</span>  <span class="token number">8</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token punctuation">[</span>  <span class="token number">9</span><span class="token punctuation">,</span>  <span class="token number">10</span><span class="token punctuation">,</span>  <span class="token number">11</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">)</span> 
+rows <span class="token operator">=</span> np<span class="token punctuation">.</span>array<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">)</span> 
+cols <span class="token operator">=</span> np<span class="token punctuation">.</span>array<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">)</span> 
+y2 <span class="token operator">=</span> x<span class="token punctuation">[</span>rows<span class="token punctuation">,</span>cols<span class="token punctuation">]</span> 
+<span class="token comment"># &#x8FD9;&#x4E2A;&#x6570;&#x7EC4;&#x7684;&#x56DB;&#x4E2A;&#x89D2;&#x5143;&#x7D20;&#x662F;&#xFF1A;</span>
+<span class="token comment"># [[ 0  2]</span>
+<span class="token comment">#  [ 9 11]]</span>
+</code></pre>
+<p><strong>&#x5E03;&#x5C14;&#x7D22;&#x5F15;</strong>&#x4F7F;&#x7528;&#x4E86; ~&#xFF08;&#x53D6;&#x8865;&#x8FD0;&#x7B97;&#x7B26;&#xFF09;&#x6765;&#x8FC7;&#x6EE4; NaN&#x3002;</p>
+<pre class="language-"><code class="lang-python">a <span class="token operator">=</span> np<span class="token punctuation">.</span>array<span class="token punctuation">(</span><span class="token punctuation">[</span>np<span class="token punctuation">.</span>nan<span class="token punctuation">,</span>  <span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span>np<span class="token punctuation">.</span>nan<span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">]</span><span class="token punctuation">)</span>  
+<span class="token keyword">print</span> <span class="token punctuation">(</span>a<span class="token punctuation">[</span><span class="token operator">~</span>np<span class="token punctuation">.</span>isnan<span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token comment"># [ 1.   2.   3.   4.   5.]</span>
+</code></pre>
+<p><strong>&#x82B1;&#x5F0F;&#x7D22;&#x5F15;</strong>&#x6307;&#x7684;&#x662F;&#x5229;&#x7528;&#x6574;&#x6570;&#x6570;&#x7EC4;&#x8FDB;&#x884C;&#x7D22;&#x5F15;&#x3002;
+&#x82B1;&#x5F0F;&#x7D22;&#x5F15;&#x6839;&#x636E;&#x7D22;&#x5F15;&#x6570;&#x7EC4;&#x7684;&#x503C;&#x4F5C;&#x4E3A;&#x76EE;&#x6807;&#x6570;&#x7EC4;&#x7684;&#x67D0;&#x4E2A;&#x8F74;&#x7684;&#x4E0B;&#x6807;&#x6765;&#x53D6;&#x503C;&#x3002;&#x5BF9;&#x4E8E;&#x4F7F;&#x7528;&#x4E00;&#x7EF4;&#x6574;&#x578B;&#x6570;&#x7EC4;&#x4F5C;&#x4E3A;&#x7D22;&#x5F15;&#xFF0C;&#x5982;&#x679C;&#x76EE;&#x6807;&#x662F;&#x4E00;&#x7EF4;&#x6570;&#x7EC4;&#xFF0C;&#x90A3;&#x4E48;&#x7D22;&#x5F15;&#x7684;&#x7ED3;&#x679C;&#x5C31;&#x662F;&#x5BF9;&#x5E94;&#x4F4D;&#x7F6E;&#x7684;&#x5143;&#x7D20;&#xFF1B;&#x5982;&#x679C;&#x76EE;&#x6807;&#x662F;&#x4E8C;&#x7EF4;&#x6570;&#x7EC4;&#xFF0C;&#x90A3;&#x4E48;&#x5C31;&#x662F;&#x5BF9;&#x5E94;&#x4E0B;&#x6807;&#x7684;&#x884C;&#x3002;
+&#x82B1;&#x5F0F;&#x7D22;&#x5F15;&#x8DDF;&#x5207;&#x7247;&#x4E0D;&#x4E00;&#x6837;&#xFF0C;&#x5B83;&#x603B;&#x662F;&#x5C06;<strong>&#x6570;&#x636E;&#x590D;&#x5236;&#x5230;&#x65B0;&#x6570;&#x7EC4;</strong>&#x4E2D;&#x3002;</p>
+<pre class="language-"><code class="lang-python">x<span class="token operator">=</span>np<span class="token punctuation">.</span>arange<span class="token punctuation">(</span><span class="token number">32</span><span class="token punctuation">)</span><span class="token punctuation">.</span>reshape<span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token number">8</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span> <span class="token punctuation">(</span>x<span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">7</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+<span class="token comment"># [[16 17 18 19]</span>
+<span class="token comment">#  [ 8  9 10 11]</span>
+<span class="token comment">#  [ 4  5  6  7]</span>
+<span class="token comment">#  [28 29 30 31]]</span>
+</code></pre>
+<p><strong>&#x4F20;&#x5165;&#x591A;&#x4E2A;&#x7D22;&#x5F15;&#x6570;&#x7EC4;&#xFF08;&#x8981;&#x4F7F;&#x7528;np.ix_&#xFF09;</strong></p>
+<pre class="language-"><code class="lang-python">x<span class="token operator">=</span>np<span class="token punctuation">.</span>arange<span class="token punctuation">(</span><span class="token number">32</span><span class="token punctuation">)</span><span class="token punctuation">.</span>reshape<span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token number">8</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span> <span class="token punctuation">(</span>x<span class="token punctuation">[</span>np<span class="token punctuation">.</span>ix_<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">7</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+<span class="token comment"># [[ 4  7  5  6]</span>
+<span class="token comment">#  [20 23 21 22]</span>
+<span class="token comment">#  [28 31 29 30]</span>
+<span class="token comment">#  [ 8 11  9 10]]</span>
+</code></pre>
+<h2 id="32-numpy&#x5E7F;&#x64AD;broadcast">3.2 NumPy&#x5E7F;&#x64AD;(Broadcast)</h2>
+<p><strong>NumPy&#x5E7F;&#x64AD;&#x7684;&#x89C4;&#x5219;</strong></p>
+<ul>
+<li>&#x8BA9;&#x6240;&#x6709;&#x8F93;&#x5165;&#x6570;&#x7EC4;&#x90FD;&#x5411;&#x5176;&#x4E2D;&#x5F62;&#x72B6;&#x6700;&#x957F;&#x7684;&#x6570;&#x7EC4;&#x770B;&#x9F50;&#xFF0C;&#x5F62;&#x72B6;&#x4E2D;&#x4E0D;&#x8DB3;&#x7684;&#x90E8;&#x5206;&#x90FD;&#x901A;&#x8FC7;&#x5728;&#x524D;&#x9762;&#x52A0; 1 &#x8865;&#x9F50;&#x3002;</li>
+<li>&#x8F93;&#x51FA;&#x6570;&#x7EC4;&#x7684;&#x5F62;&#x72B6;&#x662F;&#x8F93;&#x5165;&#x6570;&#x7EC4;&#x5F62;&#x72B6;&#x7684;&#x5404;&#x4E2A;&#x7EF4;&#x5EA6;&#x4E0A;&#x7684;&#x6700;&#x5927;&#x503C;&#x3002;</li>
+<li>&#x5982;&#x679C;&#x8F93;&#x5165;&#x6570;&#x7EC4;&#x7684;&#x67D0;&#x4E2A;&#x7EF4;&#x5EA6;&#x548C;&#x8F93;&#x51FA;&#x6570;&#x7EC4;&#x7684;&#x5BF9;&#x5E94;&#x7EF4;&#x5EA6;&#x7684;&#x957F;&#x5EA6;&#x76F8;&#x540C;&#x6216;&#x8005;&#x5176;&#x957F;&#x5EA6;&#x4E3A; 1 &#x65F6;&#xFF0C;&#x8FD9;&#x4E2A;&#x6570;&#x7EC4;&#x80FD;&#x591F;&#x7528;&#x6765;&#x8BA1;&#x7B97;&#xFF0C;&#x5426;&#x5219;&#x51FA;&#x9519;&#x3002;</li>
+<li>&#x5F53;&#x8F93;&#x5165;&#x6570;&#x7EC4;&#x7684;&#x67D0;&#x4E2A;&#x7EF4;&#x5EA6;&#x7684;&#x957F;&#x5EA6;&#x4E3A; 1 &#x65F6;&#xFF0C;&#x6CBF;&#x7740;&#x6B64;&#x7EF4;&#x5EA6;&#x8FD0;&#x7B97;&#x65F6;&#x90FD;&#x7528;&#x6B64;&#x7EF4;&#x5EA6;&#x4E0A;&#x7684;&#x7B2C;&#x4E00;&#x7EC4;&#x503C;&#x3002;</li>
+</ul>
+<p><strong>&#x7B80;&#x5355;&#x7406;&#x89E3;&#xFF1A;</strong> &#x5BF9;&#x4E24;&#x4E2A;&#x6570;&#x7EC4;&#xFF0C;&#x5206;&#x522B;&#x6BD4;&#x8F83;&#x4ED6;&#x4EEC;&#x7684;&#x6BCF;&#x4E00;&#x4E2A;&#x7EF4;&#x5EA6;&#xFF08;&#x82E5;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x6CA1;&#x6709;&#x5F53;&#x524D;&#x7EF4;&#x5EA6;&#x5219;&#x5FFD;&#x7565;&#xFF09;&#xFF0C;&#x6EE1;&#x8DB3;&#xFF1A;</p>
+<ul>
+<li>&#x6570;&#x7EC4;&#x62E5;&#x6709;&#x76F8;&#x540C;&#x5F62;&#x72B6;&#x3002;</li>
+<li>&#x5F53;&#x524D;&#x7EF4;&#x5EA6;&#x7684;&#x503C;&#x76F8;&#x7B49;&#x3002;</li>
+<li>&#x5F53;&#x524D;&#x7EF4;&#x5EA6;&#x7684;&#x503C;&#x6709;&#x4E00;&#x4E2A;&#x662F; 1&#x3002;</li>
+</ul>
+<p>&#x82E5;&#x6761;&#x4EF6;&#x4E0D;&#x6EE1;&#x8DB3;&#xFF0C;&#x629B;&#x51FA; &#x201C;ValueError: frames are not aligned&#x201D; &#x5F02;&#x5E38;&#x3002;</p>
+<p>&#x5B9E;&#x4F8B;1&#xFF1A;&#x4E24;&#x4E2A;&#x6570;&#x7EC4;&#x76F8;&#x4E58;&#xFF0C;&#x8981;&#x6C42;&#x7EF4;&#x6570;&#x76F8;&#x540C;&#xFF0C;&#x4E14;&#x5404;&#x7EF4;&#x5EA6;&#x7684;&#x957F;&#x5EA6;&#x76F8;&#x540C;&#x3002;</p>
+<pre class="language-"><code class="lang-python">a <span class="token operator">=</span> np<span class="token punctuation">.</span>array<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">)</span> 
+b <span class="token operator">=</span> np<span class="token punctuation">.</span>array<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">,</span><span class="token number">20</span><span class="token punctuation">,</span><span class="token number">30</span><span class="token punctuation">,</span><span class="token number">40</span><span class="token punctuation">]</span><span class="token punctuation">)</span> 
+c <span class="token operator">=</span> a <span class="token operator">*</span> b 
+
+<span class="token comment"># [ 10  40  90 160]</span>
+</code></pre>
+<p>&#x5B9E;&#x4F8B;2&#xFF1A;&#x5F53;&#x8FD0;&#x7B97;&#x4E2D;&#x7684; 2 &#x4E2A;&#x6570;&#x7EC4;&#x7684;&#x5F62;&#x72B6;&#x4E0D;&#x540C;&#x65F6;&#xFF0C;numpy &#x5C06;&#x81EA;&#x52A8;&#x89E6;&#x53D1;&#x5E7F;&#x64AD;&#x673A;&#x5236;&#x3002;</p>
+<pre class="language-"><code class="lang-python">a <span class="token operator">=</span> np<span class="token punctuation">.</span>array<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+           <span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">,</span><span class="token number">10</span><span class="token punctuation">,</span><span class="token number">10</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+           <span class="token punctuation">[</span><span class="token number">20</span><span class="token punctuation">,</span><span class="token number">20</span><span class="token punctuation">,</span><span class="token number">20</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+           <span class="token punctuation">[</span><span class="token number">30</span><span class="token punctuation">,</span><span class="token number">30</span><span class="token punctuation">,</span><span class="token number">30</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+b <span class="token operator">=</span> np<span class="token punctuation">.</span>array<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>a <span class="token operator">+</span> b<span class="token punctuation">)</span>    <span class="token comment"># &#x7B49;&#x540C;&#x4E8E;&#xFF1A;bb = np.tile(b, (4, 1))   print(a + bb)</span>
+
+<span class="token comment"># [[ 1  2  3]</span>
+<span class="token comment">#  [11 12 13]</span>
+<span class="token comment">#  [21 22 23]</span>
+<span class="token comment">#  [31 32 33]]</span>
+</code></pre>
+<h1 id="4-numpy-&#x6570;&#x7EC4;&#x64CD;&#x4F5C;">4. numpy &#x6570;&#x7EC4;&#x64CD;&#x4F5C;</h1>
+<h2 id="41-numpy-&#x8FED;&#x4EE3;&#x6570;&#x7EC4;">4.1 NumPy &#x8FED;&#x4EE3;&#x6570;&#x7EC4;</h2>
+<p>NumPy &#x8FED;&#x4EE3;&#x5668;&#x5BF9;&#x8C61; numpy.nditer &#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x79CD;&#x7075;&#x6D3B;&#x8BBF;&#x95EE;&#x4E00;&#x4E2A;&#x6216;&#x8005;&#x591A;&#x4E2A;&#x6570;&#x7EC4;&#x5143;&#x7D20;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x8FED;&#x4EE3;&#x5668;&#x6700;&#x57FA;&#x672C;&#x7684;&#x4EFB;&#x52A1;&#x7684;&#x53EF;&#x4EE5;&#x5B8C;&#x6210;&#x5BF9;&#x6570;&#x7EC4;&#x5143;&#x7D20;&#x7684;&#x8BBF;&#x95EE;&#x3002;</p>
+<pre class="language-"><code class="lang-python">np<span class="token punctuation">.</span>nditer<span class="token punctuation">(</span>op<span class="token punctuation">,</span> flags<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">&apos;multi_index&apos;</span><span class="token punctuation">]</span><span class="token punctuation">,</span> op_flags<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">&apos;readwrite&apos;</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>op</td>
+<td>ndarray &#x6216;&#x8005;&#x662F;&#x5E8F;&#x5217;</td>
+</tr>
+<tr>
+<td>flags</td>
+<td>&#x53EF;&#x9009;&#x9879;&#xFF0C;&#x5B57;&#x7B26;&#x4E32;&#x5E8F;&#x5217;,&#x7528;&#x4E8E;&#x63A7;&#x5236;&#x8FED;&#x4EE3;&#x5668;&#x884C;&#x4E3A;</td>
+</tr>
+<tr>
+<td>op_flags</td>
+<td>&#x53EF;&#x9009;&#x9879;&#xFF0C;&#x5B57;&#x7B26;&#x4E32;&#x5217;&#x8868;,&#x53EF;&#x9009;&#x503C;&#x6709; readonly, readwrite, or writeonly</td>
+</tr>
+<tr>
+<td>order</td>
+<td>F order&#xFF0C;&#x5373;&#x662F;&#x5217;&#x5E8F;&#x4F18;&#x5148;&#xFF1B;C order&#xFF0C;&#x5373;&#x662F;&#x884C;&#x5E8F;&#x4F18;&#x5148;&#xFF1B;</td>
+</tr>
+</tbody>
+</table>
+<pre class="language-"><code class="lang-python"><span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
+
+a <span class="token operator">=</span> np<span class="token punctuation">.</span>arange<span class="token punctuation">(</span><span class="token number">6</span><span class="token punctuation">)</span><span class="token punctuation">.</span>reshape<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">)</span>
+<span class="token keyword">for</span> x <span class="token keyword">in</span> np<span class="token punctuation">.</span>nditer<span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span> <span class="token punctuation">(</span>x<span class="token punctuation">,</span> end<span class="token operator">=</span><span class="token string">&quot;, &quot;</span> <span class="token punctuation">)</span>
+
+<span class="token comment"># &#x8FED;&#x4EE3;&#x8F93;&#x51FA;&#x5143;&#x7D20;&#xFF1A;0, 1, 2, 3, 4, 5,</span>
+</code></pre>
+<p><strong>&#x63A7;&#x5236;&#x904D;&#x5386;&#x987A;&#x5E8F;</strong></p>
+<pre class="language-"><code class="lang-python"><span class="token keyword">for</span> x <span class="token keyword">in</span> np<span class="token punctuation">.</span>nditer<span class="token punctuation">(</span>a<span class="token punctuation">,</span> order<span class="token operator">=</span><span class="token string">&apos;F&apos;</span><span class="token punctuation">)</span>    <span class="token comment"># F order&#xFF0C;&#x5373;&#x662F;&#x5217;&#x5E8F;&#x4F18;&#x5148;&#xFF1B;</span>
+<span class="token keyword">for</span> x <span class="token keyword">in</span> np<span class="token punctuation">.</span>nditer<span class="token punctuation">(</span>a<span class="token punctuation">.</span>T<span class="token punctuation">,</span> order<span class="token operator">=</span><span class="token string">&apos;C&apos;</span><span class="token punctuation">)</span>  <span class="token comment"># C order&#xFF0C;&#x5373;&#x662F;&#x884C;&#x5E8F;&#x4F18;&#x5148;&#xFF1B;</span>
+
+<span class="token comment"># 0, 1, 2, 3, 4, 5</span>
+<span class="token comment"># 0, 3, 1, 4, 2, 5</span>
+</code></pre>
+<p><strong>&#x4FEE;&#x6539;&#x6570;&#x7EC4;&#x4E2D;&#x5143;&#x7D20;&#x7684;&#x503C;</strong></p>
+<p>nditer &#x5BF9;&#x8C61;&#x6709;&#x53E6;&#x4E00;&#x4E2A;&#x53EF;&#x9009;&#x53C2;&#x6570; op_flags&#x3002; &#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;nditer &#x5C06;&#x89C6;&#x5F85;&#x8FED;&#x4EE3;&#x904D;&#x5386;&#x7684;&#x6570;&#x7EC4;&#x4E3A;&#x53EA;&#x8BFB;&#x5BF9;&#x8C61;&#xFF08;read-only&#xFF09;&#xFF0C;&#x4E3A;&#x4E86;&#x5728;&#x904D;&#x5386;&#x6570;&#x7EC4;&#x7684;&#x540C;&#x65F6;&#xFF0C;&#x5B9E;&#x73B0;&#x5BF9;&#x6570;&#x7EC4;&#x5143;&#x7D20;&#x503C;&#x5F97;&#x4FEE;&#x6539;&#xFF0C;&#x5FC5;&#x987B;&#x6307;&#x5B9A; read-write &#x6216;&#x8005; write-only &#x7684;&#x6A21;&#x5F0F;&#x3002;</p>
+<pre class="language-"><code class="lang-python"><span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
+
+a <span class="token operator">=</span> np<span class="token punctuation">.</span>arange<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">60</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">)</span> 
+a <span class="token operator">=</span> a<span class="token punctuation">.</span>reshape<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">)</span>  
+<span class="token keyword">print</span> <span class="token punctuation">(</span><span class="token string">&apos;&#x539F;&#x59CB;&#x6570;&#x7EC4;&#x662F;&#xFF1A;&apos;</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span> <span class="token punctuation">(</span>a<span class="token punctuation">)</span>
+<span class="token keyword">print</span> <span class="token punctuation">(</span><span class="token string">&apos;\n&apos;</span><span class="token punctuation">)</span>
+<span class="token keyword">for</span> x <span class="token keyword">in</span> np<span class="token punctuation">.</span>nditer<span class="token punctuation">(</span>a<span class="token punctuation">,</span> op_flags<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">&apos;readwrite&apos;</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">:</span> 
+    x<span class="token punctuation">[</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token number">2</span><span class="token operator">*</span>x 
+<span class="token keyword">print</span> <span class="token punctuation">(</span><span class="token string">&apos;&#x4FEE;&#x6539;&#x540E;&#x7684;&#x6570;&#x7EC4;&#x662F;&#xFF1A;&apos;</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span> <span class="token punctuation">(</span>a<span class="token punctuation">)</span>
+</code></pre>
+<p><strong>&#x5E7F;&#x64AD;&#x8FED;&#x4EE3;</strong>
+&#x5982;&#x679C;&#x4E24;&#x4E2A;&#x6570;&#x7EC4;&#x662F;&#x53EF;&#x5E7F;&#x64AD;&#x7684;&#xFF0C;nditer &#x7EC4;&#x5408;&#x5BF9;&#x8C61;&#x80FD;&#x591F;&#x540C;&#x65F6;&#x8FED;&#x4EE3;&#x5B83;&#x4EEC;&#x3002; &#x5047;&#x8BBE;&#x6570;&#x7EC4; a &#x7684;&#x7EF4;&#x5EA6;&#x4E3A; 3X4&#xFF0C;&#x6570;&#x7EC4; b &#x7684;&#x7EF4;&#x5EA6;&#x4E3A; 1X4 &#xFF0C;&#x5219;&#x4F7F;&#x7528;&#x4EE5;&#x4E0B;&#x8FED;&#x4EE3;&#x5668;&#xFF08;&#x6570;&#x7EC4; b &#x88AB;&#x5E7F;&#x64AD;&#x5230; a &#x7684;&#x5927;&#x5C0F;&#xFF09;&#x3002;</p>
+<pre class="language-"><code class="lang-python"><span class="token keyword">import</span> numpy <span class="token keyword">as</span> np 
+
+a <span class="token operator">=</span> np<span class="token punctuation">.</span>arange<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">60</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">)</span> 
+a <span class="token operator">=</span> a<span class="token punctuation">.</span>reshape<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">)</span>  
+<span class="token keyword">print</span>  <span class="token punctuation">(</span><span class="token string">&apos;&#x7B2C;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x4E3A;&#xFF1A;&apos;</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span> <span class="token punctuation">(</span>a<span class="token punctuation">)</span>
+<span class="token keyword">print</span>  <span class="token punctuation">(</span><span class="token string">&apos;\n&apos;</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span> <span class="token punctuation">(</span><span class="token string">&apos;&#x7B2C;&#x4E8C;&#x4E2A;&#x6570;&#x7EC4;&#x4E3A;&#xFF1A;&apos;</span><span class="token punctuation">)</span>
+b <span class="token operator">=</span> np<span class="token punctuation">.</span>array<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span>  <span class="token number">2</span><span class="token punctuation">,</span>  <span class="token number">3</span><span class="token punctuation">,</span>  <span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">,</span> dtype <span class="token operator">=</span>  <span class="token builtin">int</span><span class="token punctuation">)</span>  
+<span class="token keyword">print</span> <span class="token punctuation">(</span>b<span class="token punctuation">)</span>
+<span class="token keyword">print</span> <span class="token punctuation">(</span><span class="token string">&apos;\n&apos;</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span> <span class="token punctuation">(</span><span class="token string">&apos;&#x4FEE;&#x6539;&#x540E;&#x7684;&#x6570;&#x7EC4;&#x4E3A;&#xFF1A;&apos;</span><span class="token punctuation">)</span>
+<span class="token keyword">for</span> x<span class="token punctuation">,</span>y <span class="token keyword">in</span> np<span class="token punctuation">.</span>nditer<span class="token punctuation">(</span><span class="token punctuation">[</span>a<span class="token punctuation">,</span>b<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">:</span>  
+    <span class="token keyword">print</span> <span class="token punctuation">(</span><span class="token string">&quot;%d:%d&quot;</span>  <span class="token operator">%</span>  <span class="token punctuation">(</span>x<span class="token punctuation">,</span>y<span class="token punctuation">)</span><span class="token punctuation">,</span> end<span class="token operator">=</span><span class="token string">&quot;, &quot;</span> <span class="token punctuation">)</span>
+
+<span class="token comment"># &#x4FEE;&#x6539;&#x540E;&#x7684;&#x6570;&#x7EC4;&#x4E3A;&#xFF1A;0:1, 5:2, 10:3, 15:4, 20:1, 25:2, 30:3, 35:4, 40:1, 45:2, 50:3, 55:4,</span>
+</code></pre>
+<h2 id="42-numpy-&#x6570;&#x7EC4;&#x64CD;&#x4F5C;">4.2 Numpy &#x6570;&#x7EC4;&#x64CD;&#x4F5C;</h2>
+<p>Numpy &#x4E2D;&#x5305;&#x542B;&#x4E86;&#x4E00;&#x4E9B;&#x51FD;&#x6570;&#x7528;&#x4E8E;&#x5904;&#x7406;&#x6570;&#x7EC4;&#xFF0C;&#x5927;&#x6982;&#x53EF;&#x5206;&#x4E3A;&#x4EE5;&#x4E0B;&#x51E0;&#x7C7B;&#xFF1A;&#x4FEE;&#x6539;&#x6570;&#x7EC4;&#x5F62;&#x72B6;&#xFF0C;&#x7FFB;&#x8F6C;&#x6570;&#x7EC4;&#xFF0C;&#x4FEE;&#x6539;&#x6570;&#x7EC4;&#x7EF4;&#x5EA6;&#xFF0C;&#x8FDE;&#x63A5;&#x6570;&#x7EC4;&#xFF0C;&#x5206;&#x5272;&#x6570;&#x7EC4;&#xFF0C;&#x6570;&#x7EC4;&#x5143;&#x7D20;&#x7684;&#x6DFB;&#x52A0;&#x4E0E;&#x5220;&#x9664;&#x3002;</p>
+<p><strong>&#x4FEE;&#x6539;&#x6570;&#x7EC4;&#x5F62;&#x72B6;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x51FD;&#x6570;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>reshape</td>
+<td>&#x4E0D;&#x6539;&#x53D8;&#x6570;&#x636E;&#x7684;&#x6761;&#x4EF6;&#x4E0B;&#x4FEE;&#x6539;&#x5F62;&#x72B6;, order&#xFF1A;&#x2019;C&#x2019; &#x2014; &#x6309;&#x884C;&#xFF0C;&#x2019;F&#x2019; &#x2014; &#x6309;&#x5217;&#xFF0C;&#x2019;A&#x2019; &#x2014; &#x539F;&#x987A;&#x5E8F;&#xFF0C;&#x2019;k&#x2019; &#x2014; &#x5143;&#x7D20;&#x5728;&#x5185;&#x5B58;&#x4E2D;&#x7684;&#x51FA;&#x73B0;&#x987A;&#x5E8F;&#x3002;</td>
+</tr>
+<tr>
+<td>flat</td>
+<td>&#x6570;&#x7EC4;&#x5143;&#x7D20;&#x8FED;&#x4EE3;&#x5668;, &#x4E0E;np.nditer&#x7C7B;&#x4F3C;</td>
+</tr>
+<tr>
+<td>flatten</td>
+<td>&#x8FD4;&#x56DE;&#x4E00;&#x4EFD;&#x6570;&#x7EC4;&#x62F7;&#x8D1D;&#xFF0C;&#x5BF9;&#x62F7;&#x8D1D;&#x6240;&#x505A;&#x7684;&#x4FEE;&#x6539;&#x4E0D;&#x4F1A;&#x5F71;&#x54CD;&#x539F;&#x59CB;&#x6570;&#x7EC4;</td>
+</tr>
+<tr>
+<td>ravel</td>
+<td>&#x8FD4;&#x56DE;&#x5C55;&#x5F00;&#x6570;&#x7EC4;&#xFF0C;numpy.ravel(a, order=&apos;C&apos;)&#xFF08;&#x4E00;&#x7EF4;&#x6570;&#x7EC4;&#xFF09;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x7FFB;&#x8F6C;&#x6570;&#x7EC4;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x51FD;&#x6570;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>transpose</td>
+<td>&#x5BF9;&#x6362;&#x6570;&#x7EC4;&#x7684;&#x7EF4;&#x5EA6;</td>
+</tr>
+<tr>
+<td>ndarray.T</td>
+<td>&#x548C; self.transpose() &#x76F8;&#x540C;</td>
+</tr>
+<tr>
+<td>rollaxis</td>
+<td>&#x51FD;&#x6570;&#x5411;&#x540E;&#x6EDA;&#x52A8;&#x7279;&#x5B9A;&#x7684;&#x8F74;&#x5230;&#x4E00;&#x4E2A;&#x7279;&#x5B9A;&#x4F4D;&#x7F6E;&#xFF0C;&#x683C;&#x5F0F;&#x5982;&#x4E0B;&#xFF1A;numpy.rollaxis(arr, axis, start)&#xFF1B;arr&#xFF1A;&#x6570;&#x7EC4;&#xFF0C;axis&#xFF1A;&#x8981;&#x5411;&#x540E;&#x6EDA;&#x52A8;&#x7684;&#x8F74;&#xFF0C;&#x5176;&#x5B83;&#x8F74;&#x7684;&#x76F8;&#x5BF9;&#x4F4D;&#x7F6E;&#x4E0D;&#x4F1A;&#x6539;&#x53D8;&#xFF0C;start&#xFF1A;&#x9ED8;&#x8BA4;&#x4E3A;&#x96F6;&#xFF0C;&#x8868;&#x793A;&#x5B8C;&#x6574;&#x7684;&#x6EDA;&#x52A8;&#x3002;&#x4F1A;&#x6EDA;&#x52A8;&#x5230;&#x7279;&#x5B9A;&#x4F4D;&#x7F6E;&#x3002;</td>
+</tr>
+<tr>
+<td>swapaxes</td>
+<td>&#x5BF9;&#x6362;&#x6570;&#x7EC4;&#x7684;&#x4E24;&#x4E2A;&#x8F74;&#xFF0C;numpy.swapaxes(arr, axis1, axis2)&#xFF1B;arr&#xFF1A;&#x8F93;&#x5165;&#x7684;&#x6570;&#x7EC4;&#xFF0C;axis1&#xFF1A;&#x5BF9;&#x5E94;&#x7B2C;&#x4E00;&#x4E2A;&#x8F74;&#x7684;&#x6574;&#x6570;&#xFF0C;axis2&#xFF1A;&#x5BF9;&#x5E94;&#x7B2C;&#x4E8C;&#x4E2A;&#x8F74;&#x7684;&#x6574;&#x6570;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x4FEE;&#x6539;&#x6570;&#x7EC4;&#x7EF4;&#x5EA6;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x51FD;&#x6570;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>broadcast</td>
+<td>&#x4EA7;&#x751F;&#x6A21;&#x4EFF;&#x5E7F;&#x64AD;&#x7684;&#x5BF9;&#x8C61;</td>
+</tr>
+<tr>
+<td>broadcast_to</td>
+<td>&#x5C06;&#x6570;&#x7EC4;&#x5E7F;&#x64AD;&#x5230;&#x65B0;&#x5F62;&#x72B6;</td>
+</tr>
+<tr>
+<td>expand_dims</td>
+<td>&#x6269;&#x5C55;&#x6570;&#x7EC4;&#x7684;&#x5F62;&#x72B6;</td>
+</tr>
+<tr>
+<td>squeeze</td>
+<td>&#x4ECE;&#x6570;&#x7EC4;&#x7684;&#x5F62;&#x72B6;&#x4E2D;&#x5220;&#x9664;&#x4E00;&#x7EF4;&#x6761;&#x76EE;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x8FDE;&#x63A5;&#x6570;&#x7EC4;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x51FD;&#x6570;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>concatenate</td>
+<td>&#x8FDE;&#x63A5;&#x6CBF;&#x73B0;&#x6709;&#x8F74;&#x7684;&#x6570;&#x7EC4;&#x5E8F;&#x5217;&#xFF0C;numpy.concatenate((a1, a2, ...), axis)</td>
+</tr>
+<tr>
+<td>stack</td>
+<td>&#x6CBF;&#x7740;&#x65B0;&#x7684;&#x8F74;&#x52A0;&#x5165;&#x4E00;&#x7CFB;&#x5217;&#x6570;&#x7EC4;&#xFF0C;numpy.stack(arrays, axis)</td>
+</tr>
+<tr>
+<td>hstack</td>
+<td>&#x6C34;&#x5E73;&#x5806;&#x53E0;&#x5E8F;&#x5217;&#x4E2D;&#x7684;&#x6570;&#x7EC4;&#xFF08;&#x5217;&#x65B9;&#x5411;&#xFF09;</td>
+</tr>
+<tr>
+<td>vstack</td>
+<td>&#x7AD6;&#x76F4;&#x5806;&#x53E0;&#x5E8F;&#x5217;&#x4E2D;&#x7684;&#x6570;&#x7EC4;&#xFF08;&#x884C;&#x65B9;&#x5411;&#xFF09;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x5206;&#x5272;&#x6570;&#x7EC4;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x51FD;&#x6570;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>split</td>
+<td>&#x5C06;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x5206;&#x5272;&#x4E3A;&#x591A;&#x4E2A;&#x5B50;&#x6570;&#x7EC4;&#xFF0C;numpy.split(ary, indices_or_sections, axis)&#xFF1B;ary&#xFF1A;&#x88AB;&#x5206;&#x5272;&#x7684;&#x6570;&#x7EC4;&#xFF0C;indices_or_sections&#xFF1A;&#x679C;&#x662F;&#x4E00;&#x4E2A;&#x6574;&#x6570;&#xFF0C;&#x5C31;&#x7528;&#x8BE5;&#x6570;&#x5E73;&#x5747;&#x5207;&#x5206;&#xFF0C;&#x5982;&#x679C;&#x662F;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#xFF0C;&#x4E3A;&#x6CBF;&#x8F74;&#x5207;&#x5206;&#x7684;&#x4F4D;&#x7F6E;&#xFF08;&#x5DE6;&#x5F00;&#x53F3;&#x95ED;&#xFF09;&#xFF0C;axis&#xFF1A;&#x6CBF;&#x7740;&#x54EA;&#x4E2A;&#x7EF4;&#x5EA6;&#x8FDB;&#x884C;&#x5207;&#x5411;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;0&#xFF0C;&#x6A2A;&#x5411;&#x5207;&#x5206;&#x3002;&#x4E3A;1&#x65F6;&#xFF0C;&#x7EB5;&#x5411;&#x5207;&#x5206;</td>
+</tr>
+<tr>
+<td>hsplit</td>
+<td>&#x5C06;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x6C34;&#x5E73;&#x5206;&#x5272;&#x4E3A;&#x591A;&#x4E2A;&#x5B50;&#x6570;&#x7EC4;&#xFF08;&#x6309;&#x5217;&#xFF09;</td>
+</tr>
+<tr>
+<td>vsplit</td>
+<td>&#x5C06;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x5782;&#x76F4;&#x5206;&#x5272;&#x4E3A;&#x591A;&#x4E2A;&#x5B50;&#x6570;&#x7EC4;&#xFF08;&#x6309;&#x884C;&#xFF09;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x6570;&#x7EC4;&#x5143;&#x7D20;&#x7684;&#x6DFB;&#x52A0;&#x4E0E;&#x5220;&#x9664;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x51FD;&#x6570;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>resize</td>
+<td>&#x8FD4;&#x56DE;&#x6307;&#x5B9A;&#x5F62;&#x72B6;&#x7684;&#x65B0;&#x6570;&#x7EC4;&#xFF0C;numpy.resize(arr, shape)</td>
+</tr>
+<tr>
+<td>append</td>
+<td>&#x5C06;&#x503C;&#x6DFB;&#x52A0;&#x5230;&#x6570;&#x7EC4;&#x672B;&#x5C3E;&#xFF0C;numpy.append(arr, values, axis=None)&#xFF1B;arr&#xFF1A;&#x8F93;&#x5165;&#x6570;&#x7EC4;&#xFF0C;values&#xFF1A;&#x8981;&#x5411;arr&#x6DFB;&#x52A0;&#x7684;&#x503C;&#xFF0C;&#x9700;&#x8981;&#x548C;arr&#x5F62;&#x72B6;&#x76F8;&#x540C;&#xFF08;&#x9664;&#x4E86;&#x8981;&#x6DFB;&#x52A0;&#x7684;&#x8F74;&#xFF09;&#xFF0C;axis&#xFF1A;&#x9ED8;&#x8BA4;&#x4E3A; None&#x3002;&#x5F53;axis&#x65E0;&#x5B9A;&#x4E49;&#x65F6;&#xFF0C;&#x662F;&#x6A2A;&#x5411;&#x52A0;&#x6210;&#xFF0C;&#x8FD4;&#x56DE;&#x603B;&#x662F;&#x4E3A;&#x4E00;&#x7EF4;&#x6570;&#x7EC4;&#xFF01;&#x5F53;axis&#x6709;&#x5B9A;&#x4E49;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5206;&#x522B;&#x4E3A;0&#x548C;1&#x7684;&#x65F6;&#x5019;&#x3002;&#x5F53;axis&#x6709;&#x5B9A;&#x4E49;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5206;&#x522B;&#x4E3A;0&#x548C;1&#x7684;&#x65F6;&#x5019;&#xFF08;&#x5217;&#x6570;&#x8981;&#x76F8;&#x540C;&#xFF09;&#x3002;&#x5F53;axis&#x4E3A;1&#x65F6;&#xFF0C;&#x6570;&#x7EC4;&#x662F;&#x52A0;&#x5728;&#x53F3;&#x8FB9;&#xFF08;&#x884C;&#x6570;&#x8981;&#x76F8;&#x540C;&#xFF09;&#x3002;</td>
+</tr>
+<tr>
+<td>insert</td>
+<td>&#x6CBF;&#x6307;&#x5B9A;&#x8F74;&#x5C06;&#x503C;&#x63D2;&#x5165;&#x5230;&#x6307;&#x5B9A;&#x4E0B;&#x6807;&#x4E4B;&#x524D;&#xFF0C;numpy.insert(arr, obj, values, axis)</td>
+</tr>
+<tr>
+<td>delete</td>
+<td>&#x5220;&#x6389;&#x67D0;&#x4E2A;&#x8F74;&#x7684;&#x5B50;&#x6570;&#x7EC4;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x5220;&#x9664;&#x540E;&#x7684;&#x65B0;&#x6570;&#x7EC4;&#xFF0C;numpy.delete(arr, obj, axis)&#xFF1B;obj&#xFF1A;&#x53EF;&#x4EE5;&#x88AB;&#x5207;&#x7247;&#xFF0C;&#x6574;&#x6570;&#x6216;&#x8005;&#x6574;&#x6570;&#x6570;&#x7EC4;&#xFF0C;&#x8868;&#x660E;&#x8981;&#x4ECE;&#x8F93;&#x5165;&#x6570;&#x7EC4;&#x5220;&#x9664;&#x7684;&#x5B50;&#x6570;&#x7EC4;</td>
+</tr>
+<tr>
+<td>unique</td>
+<td>&#x67E5;&#x627E;&#x6570;&#x7EC4;&#x5185;&#x7684;&#x552F;&#x4E00;&#x5143;&#x7D20;&#xFF0C;numpy.unique(arr, return_index, return_inverse, return_counts)&#xFF1B;arr&#xFF1A;&#x8F93;&#x5165;&#x6570;&#x7EC4;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x662F;&#x4E00;&#x7EF4;&#x6570;&#x7EC4;&#x5219;&#x4F1A;&#x5C55;&#x5F00;&#xFF0C;return_index&#xFF1A;&#x5982;&#x679C;&#x4E3A;true&#xFF0C;&#x8FD4;&#x56DE;&#x65B0;&#x5217;&#x8868;&#x5143;&#x7D20;&#x5728;&#x65E7;&#x5217;&#x8868;&#x4E2D;&#x7684;&#x4F4D;&#x7F6E;&#xFF08;&#x4E0B;&#x6807;&#xFF09;&#xFF0C;&#x5E76;&#x4EE5;&#x5217;&#x8868;&#x5F62;&#x5F0F;&#x50A8;&#xFF0C;return_inverse&#xFF1A;&#x5982;&#x679C;&#x4E3A;true&#xFF0C;&#x8FD4;&#x56DE;&#x65E7;&#x5217;&#x8868;&#x5143;&#x7D20;&#x5728;&#x65B0;&#x5217;&#x8868;&#x4E2D;&#x7684;&#x4F4D;&#x7F6E;&#xFF08;&#x4E0B;&#x6807;&#xFF09;&#xFF0C;&#x5E76;&#x4EE5;&#x5217;&#x8868;&#x5F62;&#x5F0F;&#x50A8;&#xFF0C;return_counts&#xFF1A;&#x5982;&#x679C;&#x4E3A;true&#xFF0C;&#x8FD4;&#x56DE;&#x53BB;&#x91CD;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x5143;&#x7D20;&#x5728;&#x539F;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x51FA;&#x73B0;&#x6B21;&#x6570;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="43-numpy-&#x4F4D;&#x8FD0;&#x7B97;">4.3 NumPy &#x4F4D;&#x8FD0;&#x7B97;</h2>
+<p>NumPy &#x201C;bitwise_&#x201D; &#x5F00;&#x5934;&#x7684;&#x51FD;&#x6570;&#x662F;&#x4F4D;&#x8FD0;&#x7B97;&#x51FD;&#x6570;&#xFF0C;NumPy &#x4F4D;&#x8FD0;&#x7B97;&#x5305;&#x62EC;&#x4EE5;&#x4E0B;&#x51E0;&#x4E2A;&#x51FD;&#x6570;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>&#x51FD;&#x6570;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>bitwise_and</td>
+<td>&#x5BF9;&#x6570;&#x7EC4;&#x5143;&#x7D20;&#x6267;&#x884C;&#x4F4D;&#x4E0E;&#x64CD;&#x4F5C;</td>
+</tr>
+<tr>
+<td>bitwise_or</td>
+<td>&#x5BF9;&#x6570;&#x7EC4;&#x5143;&#x7D20;&#x6267;&#x884C;&#x4F4D;&#x6216;&#x64CD;&#x4F5C;</td>
+</tr>
+<tr>
+<td>invert</td>
+<td>&#x6309;&#x4F4D;&#x53D6;&#x53CD;</td>
+</tr>
+<tr>
+<td>left_shift</td>
+<td>&#x5411;&#x5DE6;&#x79FB;&#x52A8;&#x4E8C;&#x8FDB;&#x5236;&#x8868;&#x793A;&#x7684;&#x4F4D;</td>
+</tr>
+<tr>
+<td>right_shift</td>
+<td>&#x5411;&#x53F3;&#x79FB;&#x52A8;&#x4E8C;&#x8FDB;&#x5236;&#x8868;&#x793A;&#x7684;&#x4F4D;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x6CE8;&#xFF1A;</strong> &#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; &#x201C;&amp;&#x201D;&#x3001; &#x201C;~&#x201D;&#x3001; &#x201C;|&#x201D; &#x548C; &#x201C;^&#x201D; &#x7B49;&#x64CD;&#x4F5C;&#x7B26;&#x8FDB;&#x884C;&#x8BA1;&#x7B97;</p>
+<h1 id="5-numpy-&#x51FD;&#x6570;">5. Numpy &#x51FD;&#x6570;</h1>
+<h2 id="51-numpy-&#x5B57;&#x7B26;&#x4E32;&#x51FD;&#x6570;">5.1 NumPy &#x5B57;&#x7B26;&#x4E32;&#x51FD;&#x6570;</h2>
+<p>&#x5B57;&#x7B26;&#x6570;&#x7EC4;&#x7C7B;&#xFF08;numpy.char&#xFF09;&#x4E2D;&#x5B9A;&#x4E49;&#x4E86;&#x4E00;&#x4E9B;&#x51FD;&#x6570;&#xFF0C;&#x8FD9;&#x4E9B;&#x51FD;&#x6570;&#x7528;&#x4E8E;&#x5BF9; dtype &#x4E3A; numpy.string<em> &#x6216; numpy.unicode</em> &#x7684;&#x6570;&#x7EC4;&#x6267;&#x884C;&#x5411;&#x91CF;&#x5316;&#x5B57;&#x7B26;&#x4E32;&#x64CD;&#x4F5C;&#xFF0C;&#x5B83;&#x4EEC;&#x57FA;&#x4E8E; Python &#x5185;&#x7F6E;&#x5E93;&#x4E2D;&#x7684;&#x6807;&#x51C6;&#x5B57;&#x7B26;&#x4E32;&#x51FD;&#x6570;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>&#x51FD;&#x6570;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>numpy.char.add()</td>
+<td>&#x51FD;&#x6570;&#x4F9D;&#x6B21;&#x5BF9;&#x4E24;&#x4E2A;&#x6570;&#x7EC4;&#x7684;&#x5143;&#x7D20;&#x8FDB;&#x884C;&#x5B57;&#x7B26;&#x4E32;&#x8FDE;&#x63A5;</td>
+</tr>
+<tr>
+<td>numpy.char.multiply()</td>
+<td>&#x51FD;&#x6570;&#x6267;&#x884C;&#x591A;&#x91CD;&#x8FDE;&#x63A5;&#x3002;<code>np.char.multiply(&apos;geek-docs &apos;,3)</code>&#x2014;&#x2014;&#x7ED3;&#x679C;&#xFF1A;<code>geek-docs geek-docs geek-docs</code></td>
+</tr>
+<tr>
+<td>numpy.char.center()</td>
+<td>&#x51FD;&#x6570;&#x7528;&#x4E8E;&#x5C06;&#x5B57;&#x7B26;&#x4E32;&#x5C45;&#x4E2D;&#xFF0C;&#x5E76;&#x4F7F;&#x7528;&#x6307;&#x5B9A;&#x5B57;&#x7B26;&#x5728;&#x5DE6;&#x4FA7;&#x548C;&#x53F3;&#x4FA7;&#x8FDB;&#x884C;&#x586B;&#x5145;</td>
+</tr>
+<tr>
+<td>numpy.char.capitalize()</td>
+<td>&#x51FD;&#x6570;&#x5C06;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x5B57;&#x6BCD;&#x8F6C;&#x6362;&#x4E3A;&#x5927;&#x5199;</td>
+</tr>
+<tr>
+<td>numpy.char.title()</td>
+<td>&#x51FD;&#x6570;&#x5C06;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x6BCF;&#x4E2A;&#x5355;&#x8BCD;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x5B57;&#x6BCD;&#x8F6C;&#x6362;&#x4E3A;&#x5927;&#x5199;</td>
+</tr>
+<tr>
+<td>numpy.char.lower()</td>
+<td>&#x51FD;&#x6570;&#x5BF9;&#x6570;&#x7EC4;&#x7684;&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#x8F6C;&#x6362;&#x4E3A;&#x5C0F;&#x5199;&#x3002;&#x5B83;&#x5BF9;&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#x8C03;&#x7528; str.lower&#x3002;</td>
+</tr>
+<tr>
+<td>numpy.char.upper()</td>
+<td>&#x51FD;&#x6570;&#x5BF9;&#x6570;&#x7EC4;&#x7684;&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#x8F6C;&#x6362;&#x4E3A;&#x5927;&#x5199;&#x3002;&#x5B83;&#x5BF9;&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#x8C03;&#x7528; str.upper&#x3002;</td>
+</tr>
+<tr>
+<td>numpy.char.split()</td>
+<td>&#x8FC7;&#x6307;&#x5B9A;&#x5206;&#x9694;&#x7B26;&#x5BF9;&#x5B57;&#x7B26;&#x4E32;&#x8FDB;&#x884C;&#x5206;&#x5272;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x6570;&#x7EC4;&#x3002;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5206;&#x9694;&#x7B26;&#x4E3A;&#x7A7A;&#x683C;&#x3002;</td>
+</tr>
+<tr>
+<td>numpy.char.splitlines()</td>
+<td>&#x51FD;&#x6570;&#x4EE5;&#x6362;&#x884C;&#x7B26;&#x4F5C;&#x4E3A;&#x5206;&#x9694;&#x7B26;&#x6765;&#x5206;&#x5272;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x6570;&#x7EC4;&#x3002;</td>
+</tr>
+<tr>
+<td>numpy.char.strip()</td>
+<td>&#x51FD;&#x6570;&#x7528;&#x4E8E;&#x79FB;&#x9664;&#x5F00;&#x5934;&#x6216;&#x7ED3;&#x5C3E;&#x5904;&#x7684;&#x7279;&#x5B9A;&#x5B57;&#x7B26;&#x3002;</td>
+</tr>
+<tr>
+<td>numpy.char.join()</td>
+<td>&#x51FD;&#x6570;&#x901A;&#x8FC7;&#x6307;&#x5B9A;&#x5206;&#x9694;&#x7B26;&#x6765;&#x8FDE;&#x63A5;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x5143;&#x7D20;&#x6216;&#x5B57;&#x7B26;&#x4E32;</td>
+</tr>
+<tr>
+<td>numpy.char.replace()</td>
+<td>&#x51FD;&#x6570;&#x4F7F;&#x7528;&#x65B0;&#x5B57;&#x7B26;&#x4E32;&#x66FF;&#x6362;&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x5B50;&#x5B57;&#x7B26;&#x4E32;&#x3002;</td>
+</tr>
+<tr>
+<td>numpy.char.encode()</td>
+<td>&#x51FD;&#x6570;&#x5BF9;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#x8C03;&#x7528; str.encode &#x51FD;&#x6570;&#x3002; &#x9ED8;&#x8BA4;&#x7F16;&#x7801;&#x662F; utf-8&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x6807;&#x51C6; Python &#x5E93;&#x4E2D;&#x7684;&#x7F16;&#x89E3;&#x7801;&#x5668;&#x3002;</td>
+</tr>
+<tr>
+<td>numpy.char.decode()</td>
+<td>&#x51FD;&#x6570;&#x5BF9;&#x7F16;&#x7801;&#x7684;&#x5143;&#x7D20;&#x8FDB;&#x884C; str.decode() &#x89E3;&#x7801;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="52-numpy-&#x6570;&#x5B66;&#x51FD;&#x6570;">5.2 NumPy &#x6570;&#x5B66;&#x51FD;&#x6570;</h2>
+<p>NumPy &#x5305;&#x542B;&#x5927;&#x91CF;&#x7684;&#x6570;&#x5B66;&#x8FD0;&#x7B97;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x5305;&#x62EC;&#x4E09;&#x89D2;&#x51FD;&#x6570;&#xFF0C;&#x7B97;&#x672F;&#x8FD0;&#x7B97;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x590D;&#x6570;&#x5904;&#x7406;&#x51FD;&#x6570;&#x7B49;&#x3002;</p>
+<p><strong>&#x4E09;&#x89D2;&#x51FD;&#x6570;</strong></p>
+<p><img src="D:\Gitbook\Python_notebook\image\sanjiaohanshu.jpg" alt="&#x4E09;&#x89D2;&#x51FD;&#x6570;"></p>
+<p><strong>&#x7B97;&#x672F;&#x8FD0;&#x7B97;&#x7684;&#x51FD;&#x6570;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x51FD;&#x6570;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>numpy.around()</td>
+<td>&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x6307;&#x5B9A;&#x6570;&#x5B57;&#x7684;&#x56DB;&#x820D;&#x4E94;&#x5165;&#x503C;&#xFF0C;numpy.around(a,decimals)&#xFF1B;decimals&#xFF1A;&#x820D;&#x5165;&#x7684;&#x5C0F;&#x6570;&#x4F4D;&#x6570;&#x3002; &#x9ED8;&#x8BA4;&#x503C;&#x4E3A;0&#x3002; &#x5982;&#x679C;&#x4E3A;&#x8D1F;&#xFF0C;&#x6574;&#x6570;&#x5C06;&#x56DB;&#x820D;&#x4E94;&#x5165;&#x5230;&#x5C0F;&#x6570;&#x70B9;&#x5DE6;&#x4FA7;&#x7684;&#x4F4D;&#x7F6E;</td>
+</tr>
+<tr>
+<td>numpy.floor()</td>
+<td>&#x8FD4;&#x56DE;&#x6570;&#x5B57;&#x7684;&#x4E0B;&#x820D;&#x6574;&#x6570;&#xFF0C;&#x5411;&#x4E0B;&#x53D6;&#x6574;</td>
+</tr>
+<tr>
+<td>numpy.ceil()</td>
+<td>&#x8FD4;&#x56DE;&#x6570;&#x5B57;&#x7684;&#x4E0A;&#x5165;&#x6574;&#x6570;&#xFF0C;&#x5411;&#x4E0A;&#x53D6;&#x6574;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="53-numpy-&#x7B97;&#x672F;&#x51FD;&#x6570;">5.3 NumPy &#x7B97;&#x672F;&#x51FD;&#x6570;</h2>
+<p>&#x5305;&#x542B;&#x7B80;&#x5355;&#x7684;&#x52A0;&#x51CF;&#x4E58;&#x9664;: add()&#xFF0C;subtract()&#xFF0C;multiply() &#x548C; divide()&#xFF0C;&#x4E5F;&#x5305;&#x542B;&#x5E38;&#x89C1;&#x7684;numpy.reciprocal()&#xFF0C;numpy.power()&#xFF0C;numpy.mod()&#x3002;
+<strong>&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#x6570;&#x7EC4;&#x5FC5;&#x987B;&#x5177;&#x6709;&#x76F8;&#x540C;&#x7684;&#x5F62;&#x72B6;&#x6216;&#x7B26;&#x5408;&#x6570;&#x7EC4;&#x5E7F;&#x64AD;&#x89C4;&#x5219;</strong></p>
+<p><img src="D:\Gitbook\Python_notebook\image\dot_product.jpg" alt="dot_product"></p>
+<table>
+<thead>
+<tr>
+<th>&#x51FD;&#x6570;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>numpy.reciprocal()</td>
+<td>&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x53C2;&#x6570;&#x9010;&#x5143;&#x7D20;&#x7684;&#x5012;&#x6570;&#x3002;&#x5982; 1/4 &#x5012;&#x6570;&#x4E3A; 4/1&#x3002;</td>
+</tr>
+<tr>
+<td>numpy.power()</td>
+<td>&#x51FD;&#x6570;&#x5C06;&#x7B2C;&#x4E00;&#x4E2A;&#x8F93;&#x5165;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x5143;&#x7D20;&#x4F5C;&#x4E3A;&#x5E95;&#x6570;&#xFF0C;&#x8BA1;&#x7B97;&#x5B83;&#x4E0E;&#x7B2C;&#x4E8C;&#x4E2A;&#x8F93;&#x5165;&#x6570;&#x7EC4;&#x4E2D;&#x76F8;&#x5E94;&#x5143;&#x7D20;&#x7684;&#x5E42;&#x3002;</td>
+</tr>
+<tr>
+<td>numpy.mod()</td>
+<td>&#x8BA1;&#x7B97;&#x8F93;&#x5165;&#x6570;&#x7EC4;&#x4E2D;&#x76F8;&#x5E94;&#x5143;&#x7D20;&#x7684;&#x76F8;&#x9664;&#x540E;&#x7684;&#x4F59;&#x6570;&#x3002; &#x51FD;&#x6570; numpy.remainder() &#x4E5F;&#x4EA7;&#x751F;&#x76F8;&#x540C;&#x7684;&#x7ED3;&#x679C;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="54-numpy-&#x7EDF;&#x8BA1;&#x51FD;&#x6570;">5.4 NumPy &#x7EDF;&#x8BA1;&#x51FD;&#x6570;</h2>
+<table>
+<thead>
+<tr>
+<th>&#x51FD;&#x6570;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>numpy.amin() &#x548C; numpy.amax()</td>
+<td>numpy.amin() &#x7528;&#x4E8E;&#x8BA1;&#x7B97;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x5143;&#x7D20;&#x6CBF;&#x6307;&#x5B9A;&#x8F74;&#x7684;&#x6700;&#x5C0F;&#x503C;&#x3002;<code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">&gt;</span></span></code> numpy.amax() &#x7528;&#x4E8E;&#x8BA1;&#x7B97;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x5143;&#x7D20;&#x6CBF;&#x6307;&#x5B9A;&#x8F74;&#x7684;&#x6700;&#x5927;&#x503C;&#x3002;</td>
+</tr>
+<tr>
+<td>numpy.ptp()</td>
+<td>&#x51FD;&#x6570;&#x8BA1;&#x7B97;&#x6570;&#x7EC4;&#x4E2D;&#x5143;&#x7D20;&#x6700;&#x5927;&#x503C;&#x4E0E;&#x6700;&#x5C0F;&#x503C;&#x7684;&#x5DEE;&#xFF08;&#x6700;&#x5927;&#x503C; &#x2013; &#x6700;&#x5C0F;&#x503C;&#xFF09;&#x3002;</td>
+</tr>
+<tr>
+<td>numpy.percentile()</td>
+<td>&#x767E;&#x5206;&#x4F4D;&#x6570;&#x662F;&#x7EDF;&#x8BA1;&#x4E2D;&#x4F7F;&#x7528;&#x7684;&#x5EA6;&#x91CF;&#xFF0C;&#x8868;&#x793A;&#x5C0F;&#x4E8E;&#x8FD9;&#x4E2A;&#x503C;&#x7684;&#x89C2;&#x5BDF;&#x503C;&#x7684;&#x767E;&#x5206;&#x6BD4;,numpy.percentile(a, q, axis)&#xFF1B;<code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">&gt;</span></span></code> a&#xFF1A;&#x8F93;&#x5165;&#x6570;&#x7EC4;&#xFF0C;q&#xFF1A;&#x8981;&#x8BA1;&#x7B97;&#x7684;&#x767E;&#x5206;&#x4F4D;&#x6570;&#xFF0C;&#x5728; 0 ~ 100 &#x4E4B;&#x95F4;&#xFF0C;axis&#xFF1A;&#x6CBF;&#x7740;&#x5B83;&#x8BA1;&#x7B97;&#x767E;&#x5206;&#x4F4D;&#x6570;&#x7684;&#x8F74;&#x3002;<code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">&gt;</span></span>np.percentile(a, 50)</code> 50%&#x5206;&#x4F4D;&#x6570;</td>
+</tr>
+<tr>
+<td>numpy.median()</td>
+<td>&#x51FD;&#x6570;&#x7528;&#x4E8E;&#x8BA1;&#x7B97;&#x6570;&#x7EC4; a &#x4E2D;&#x5143;&#x7D20;&#x7684;&#x4E2D;&#x4F4D;&#x6570;&#xFF08;&#x4E2D;&#x503C;&#xFF09;</td>
+</tr>
+<tr>
+<td>numpy.mean()</td>
+<td>&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x6570;&#x7EC4;&#x4E2D;&#x5143;&#x7D20;&#x7684;&#x7B97;&#x672F;&#x5E73;&#x5747;&#x503C;&#x3002; &#x5982;&#x679C;&#x63D0;&#x4F9B;&#x4E86;&#x8F74;&#xFF0C;&#x5219;&#x6CBF;&#x5176;&#x8BA1;&#x7B97;&#x3002;</td>
+</tr>
+<tr>
+<td>numpy.average()</td>
+<td>&#x51FD;&#x6570;&#x6839;&#x636E;&#x5728;&#x53E6;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x4E2D;&#x7ED9;&#x51FA;&#x7684;&#x5404;&#x81EA;&#x7684;&#x6743;&#x91CD;&#x8BA1;&#x7B97;&#x6570;&#x7EC4;&#x4E2D;&#x5143;&#x7D20;&#x7684;&#x52A0;&#x6743;&#x5E73;&#x5747;&#x503C;&#x3002;&#x8BE5;&#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x63A5;&#x53D7;&#x4E00;&#x4E2A;&#x8F74;&#x53C2;&#x6570;&#x3002; &#x5982;&#x679C;&#x6CA1;&#x6709;&#x6307;&#x5B9A;&#x8F74;&#xFF0C;&#x5219;&#x6570;&#x7EC4;&#x4F1A;&#x88AB;&#x5C55;&#x5F00;&#x3002;</td>
+</tr>
+<tr>
+<td>numpy.std</td>
+<td>&#x6807;&#x51C6;&#x5DEE;</td>
+</tr>
+<tr>
+<td>numpy.var</td>
+<td>&#x65B9;&#x5DEE;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="55-numpy-&#x6392;&#x5E8F;&#x51FD;&#x6570;">5.5 NumPy &#x6392;&#x5E8F;&#x51FD;&#x6570;</h2>
+<p>NumPy &#x63D0;&#x4F9B;&#x4E86;&#x591A;&#x79CD;&#x6392;&#x5E8F;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x5982;&#xFF1A;numpy.sort()&#xFF0C;numpy.argsort()&#xFF0C;numpy.lexsort()&#x7B49;&#xFF0C;&#x8FD9;&#x4E9B;&#x6392;&#x5E8F;&#x51FD;&#x6570;&#x5B9E;&#x73B0;&#x4E0D;&#x540C;&#x7684;&#x6392;&#x5E8F;&#x7B97;&#x6CD5;&#xFF0C;&#x6BCF;&#x4E2A;&#x6392;&#x5E8F;&#x7B97;&#x6CD5;&#x7684;&#x7279;&#x5F81;&#x5728;&#x4E8E;&#x6267;&#x884C;&#x901F;&#x5EA6;&#xFF0C;&#x6700;&#x574F;&#x60C5;&#x51B5;&#x6027;&#x80FD;&#xFF0C;&#x6240;&#x9700;&#x7684;&#x5DE5;&#x4F5C;&#x7A7A;&#x95F4;&#x548C;&#x7B97;&#x6CD5;&#x7684;&#x7A33;&#x5B9A;&#x6027;&#x3002; &#x4E0B;&#x8868;&#x663E;&#x793A;&#x4E86;&#x4E09;&#x79CD;&#x6392;&#x5E8F;&#x7B97;&#x6CD5;&#x7684;&#x6BD4;&#x8F83;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">&#x79CD;&#x7C7B;</th>
+<th style="text-align:center">&#x901F;&#x5EA6;</th>
+<th style="text-align:center">&#x6700;&#x574F;&#x60C5;&#x51B5;</th>
+<th style="text-align:center">&#x5DE5;&#x4F5C;&#x7A7A;&#x95F4;</th>
+<th style="text-align:center">&#x7A33;&#x5B9A;&#x6027;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">&apos;quicksort&apos;&#xFF08;&#x5FEB;&#x901F;&#x6392;&#x5E8F;&#xFF09;</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">O(n^2)</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">&#x5426;</td>
+</tr>
+<tr>
+<td style="text-align:center">&apos;mergesort&apos;&#xFF08;&#x5F52;&#x5E76;&#x6392;&#x5E8F;&#xFF09;</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">O(n*log(n))</td>
+<td style="text-align:center">~n/2</td>
+<td style="text-align:center">&#x662F;</td>
+</tr>
+<tr>
+<td style="text-align:center">&apos;heapsort&apos;&#xFF08;&#x5806;&#x6392;&#x5E8F;&#xFF09;</td>
+<td style="text-align:center">3</td>
+<td style="text-align:center">O(n*log(n))</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">&#x5426;</td>
+</tr>
+</tbody>
+</table>
+<p><img src="D:\Gitbook\Python_notebook\image\paixu.gif" alt="paixu"></p>
+<p><strong>numpy.sort()</strong> &#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x8F93;&#x5165;&#x6570;&#x7EC4;&#x7684;&#x6392;&#x5E8F;&#x526F;&#x672C;&#x3002;&#x51FD;&#x6570;&#x683C;&#x5F0F;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre class="language-"><code class="lang-python">numpy<span class="token punctuation">.</span>sort<span class="token punctuation">(</span>a<span class="token punctuation">,</span> axis<span class="token punctuation">,</span> kind<span class="token punctuation">,</span> order<span class="token punctuation">)</span>
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a</td>
+<td>&#x8981;&#x6392;&#x5E8F;&#x7684;&#x6570;&#x7EC4;</td>
+</tr>
+<tr>
+<td>axis</td>
+<td>&#x6CBF;&#x7740;&#x5B83;&#x6392;&#x5E8F;&#x6570;&#x7EC4;&#x7684;&#x8F74;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x6570;&#x7EC4;&#x4F1A;&#x88AB;&#x5C55;&#x5F00;&#xFF0C;&#x6CBF;&#x7740;&#x6700;&#x540E;&#x7684;&#x8F74;&#x6392;&#x5E8F;&#xFF0C; axis=0 &#x6309;&#x5217;&#x6392;&#x5E8F;&#xFF0C;axis=1 &#x6309;&#x884C;&#x6392;&#x5E8F;</td>
+</tr>
+<tr>
+<td>kind</td>
+<td>&#x9ED8;&#x8BA4;&#x4E3A;&#x2019;quicksort&#x2019;&#xFF08;&#x5FEB;&#x901F;&#x6392;&#x5E8F;&#xFF09;</td>
+</tr>
+<tr>
+<td>order</td>
+<td>order=&#x2018;&#x5B57;&#x6BB5;&#x540D;&#x2019; &#x6309;&#x5B57;&#x6BB5;&#x540D;&#x8FDB;&#x884C;&#x6392;&#x5E8F;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>numpy.argsort():</strong> &#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x7684;&#x662F;&#x6570;&#x7EC4;&#x503C;&#x4ECE;&#x5C0F;&#x5230;&#x5927;&#x7684;&#x7D22;&#x5F15;&#x503C;&#x3002;
+<strong>numpy.lexsort():</strong> &#x7528;&#x4E8E;&#x5BF9;&#x591A;&#x4E2A;&#x5E8F;&#x5217;&#x8FDB;&#x884C;&#x6392;&#x5E8F;&#x3002;&#x628A;&#x5B83;&#x60F3;&#x8C61;&#x6210;&#x5BF9;&#x7535;&#x5B50;&#x8868;&#x683C;&#x8FDB;&#x884C;&#x6392;&#x5E8F;&#xFF0C;&#x6BCF;&#x4E00;&#x5217;&#x4EE3;&#x8868;&#x4E00;&#x4E2A;&#x5E8F;&#x5217;&#xFF0C;&#x6392;&#x5E8F;&#x65F6;&#x4F18;&#x5148;&#x7167;&#x987E;&#x9760;&#x540E;&#x7684;&#x5217;&#x3002;</p>
+<h2 id="56-numpy-&#x6761;&#x4EF6;&#x7B5B;&#x9009;&#x51FD;&#x6570;">5.6 NumPy &#x6761;&#x4EF6;&#x7B5B;&#x9009;&#x51FD;&#x6570;</h2>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>numpy.argmax()&#x548C;numpy.argmin()</td>
+<td>&#x5206;&#x522B;&#x6CBF;&#x7ED9;&#x5B9A;&#x8F74;&#x8FD4;&#x56DE;&#x6700;&#x5927;&#x548C;&#x6700;&#x5C0F;&#x5143;&#x7D20;&#x7684;&#x7D22;&#x5F15;&#x3002;</td>
+</tr>
+<tr>
+<td>numpy.nonzero()</td>
+<td>&#x8FD4;&#x56DE;&#x8F93;&#x5165;&#x6570;&#x7EC4;&#x4E2D;&#x975E;&#x96F6;&#x5143;&#x7D20;&#x7684;&#x7D22;&#x5F15;&#x3002;</td>
+</tr>
+<tr>
+<td>numpy.where()</td>
+<td>&#x8FD4;&#x56DE;&#x8F93;&#x5165;&#x6570;&#x7EC4;&#x4E2D;&#x6EE1;&#x8DB3;&#x7ED9;&#x5B9A;&#x6761;&#x4EF6;&#x7684;&#x5143;&#x7D20;&#x7684;&#x7D22;&#x5F15;&#x3002;</td>
+</tr>
+<tr>
+<td>numpy.extract()</td>
+<td>&#x6839;&#x636E;&#x67D0;&#x4E2A;&#x6761;&#x4EF6;&#x4ECE;&#x6570;&#x7EC4;&#x4E2D;&#x62BD;&#x53D6;&#x5143;&#x7D20;&#xFF0C;&#x8FD4;&#x56DE;&#x6EE1;&#x6761;&#x4EF6;&#x7684;&#x5143;&#x7D20;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<pre class="language-"><code class="lang-python"><span class="token keyword">import</span> numpy <span class="token keyword">as</span> np 
+
+x <span class="token operator">=</span> np<span class="token punctuation">.</span>arange<span class="token punctuation">(</span><span class="token number">9</span><span class="token punctuation">.</span><span class="token punctuation">)</span><span class="token punctuation">.</span>reshape<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span>  <span class="token number">3</span><span class="token punctuation">)</span>  
+<span class="token keyword">print</span> <span class="token punctuation">(</span><span class="token string">&apos;&#x6211;&#x4EEC;&#x7684;&#x6570;&#x7EC4;&#x662F;&#xFF1A;&apos;</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span> <span class="token punctuation">(</span>x<span class="token punctuation">)</span>
+<span class="token comment"># &#x5B9A;&#x4E49;&#x6761;&#x4EF6;, &#x9009;&#x62E9;&#x5076;&#x6570;&#x5143;&#x7D20;</span>
+condition <span class="token operator">=</span> np<span class="token punctuation">.</span>mod<span class="token punctuation">(</span>x<span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span>  <span class="token operator">==</span>  <span class="token number">0</span>  
+<span class="token keyword">print</span> <span class="token punctuation">(</span><span class="token string">&apos;&#x6309;&#x5143;&#x7D20;&#x7684;&#x6761;&#x4EF6;&#x503C;&#xFF1A;&apos;</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span> <span class="token punctuation">(</span>condition<span class="token punctuation">)</span>
+<span class="token keyword">print</span> <span class="token punctuation">(</span><span class="token string">&apos;&#x4F7F;&#x7528;&#x6761;&#x4EF6;&#x63D0;&#x53D6;&#x5143;&#x7D20;&#xFF1A;&apos;</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span> <span class="token punctuation">(</span>np<span class="token punctuation">.</span>extract<span class="token punctuation">(</span>condition<span class="token punctuation">,</span> x<span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token comment"># &#x4F7F;&#x7528;&#x6761;&#x4EF6;&#x63D0;&#x53D6;&#x5143;&#x7D20;&#xFF1A;[0. 2. 4. 6. 8.]</span>
+</code></pre>
+<h1 id="6-numpy-&#x77E9;&#x9635;&#x5E93;matrix">6. NumPy &#x77E9;&#x9635;&#x5E93;(Matrix)</h1>
+<p>NumPy &#x4E2D;&#x5305;&#x542B;&#x4E86;&#x4E00;&#x4E2A;&#x77E9;&#x9635;&#x5E93; numpy.matlib&#xFF0C;&#x8BE5;&#x6A21;&#x5757;&#x4E2D;&#x7684;&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x7684;&#x662F;&#x4E00;&#x4E2A;&#x77E9;&#x9635;&#xFF0C;&#x800C;&#x4E0D;&#x662F; ndarray &#x5BF9;&#x8C61;&#xFF0C;&#x4E00;&#x4E2A; <code>m x n</code> &#x7684;&#x77E9;&#x9635;&#x662F;&#x4E00;&#x4E2A;&#x7531;m&#x884C;(row)n&#x5217;&#xFF08;column&#xFF09;&#x5143;&#x7D20;&#x6392;&#x5217;&#x6210;&#x7684;&#x77E9;&#x5F62;&#x9635;&#x5217;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>&#x51FD;&#x6570;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>numpy.matlib.empty()</td>
+<td>&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x77E9;&#x9635;</td>
+</tr>
+<tr>
+<td>numpy.matlib.zeros()</td>
+<td>&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x4EE5; 0 &#x586B;&#x5145;&#x7684;&#x77E9;&#x9635;</td>
+</tr>
+<tr>
+<td>numpy.matlib.ones()</td>
+<td>&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x4EE5; 1 &#x586B;&#x5145;&#x7684;&#x77E9;&#x9635;</td>
+</tr>
+<tr>
+<td>numpy.matlib.eye()</td>
+<td>&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x77E9;&#x9635;&#xFF0C;&#x5BF9;&#x89D2;&#x7EBF;&#x5143;&#x7D20;&#x4E3A; 1&#xFF0C;&#x5176;&#x4ED6;&#x4F4D;&#x7F6E;&#x4E3A;&#x96F6;</td>
+</tr>
+<tr>
+<td>numpy.matlib.identity()</td>
+<td>&#x8FD4;&#x56DE;&#x7ED9;&#x5B9A;&#x5927;&#x5C0F;&#x7684;&#x5355;&#x4F4D;&#x77E9;&#x9635;</td>
+</tr>
+<tr>
+<td>numpy.matlib.rand()</td>
+<td>&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x7ED9;&#x5B9A;&#x5927;&#x5C0F;&#x7684;&#x77E9;&#x9635;&#xFF0C;&#x6570;&#x636E;&#x662F;&#x968F;&#x673A;&#x586B;&#x5145;&#x7684;</td>
+</tr>
+</tbody>
+</table>
+<h1 id="7-numpy-&#x7EBF;&#x6027;&#x4EE3;&#x6570;">7. NumPy &#x7EBF;&#x6027;&#x4EE3;&#x6570;</h1>
+<p>NumPy&#x63D0;&#x4F9B;&#x7684;&#x7EBF;&#x6027;&#x4EE3;&#x6570;&#x51FD;&#x6570;&#x5E93; linalg&#xFF0C;numpy.dot()&#xFF0C;numpy.vdot()&#xFF0C;numpy.inner()&#xFF0C;numpy.matmul()&#x7B49;&#xFF0C;&#x8FD9;&#x4E9B;&#x5E93;&#x548C;&#x51FD;&#x6570;&#x5B9E;&#x73B0;&#x4E86;&#x7EBF;&#x6027;&#x4EE3;&#x6570;&#x6240;&#x9700;&#x7684;&#x6240;&#x6709;&#x529F;&#x80FD;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>&#x51FD;&#x6570;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>numpy.dot()&#xFF0C;</td>
+<td>&#x4E24;&#x4E2A;&#x6570;&#x7EC4;&#x7684;&#x70B9;&#x79EF;&#xFF0C;&#x5373;&#x5143;&#x7D20;&#x5BF9;&#x5E94;&#x76F8;&#x4E58;&#x3002;</td>
+</tr>
+<tr>
+<td>numpy.vdot()</td>
+<td>&#x4E24;&#x4E2A;&#x5411;&#x91CF;&#x7684;&#x70B9;&#x79EF;</td>
+</tr>
+<tr>
+<td>numpy.inner()</td>
+<td>&#x4E24;&#x4E2A;&#x6570;&#x7EC4;&#x7684;&#x5185;&#x79EF;</td>
+</tr>
+<tr>
+<td>numpy.matmul()</td>
+<td>&#x4E24;&#x4E2A;&#x6570;&#x7EC4;&#x7684;&#x77E9;&#x9635;&#x79EF;</td>
+</tr>
+<tr>
+<td>numpy.linalg.det()</td>
+<td>&#x6570;&#x7EC4;&#x7684;&#x884C;&#x5217;&#x5F0F;</td>
+</tr>
+<tr>
+<td>numpy.linalg.solve()</td>
+<td>&#x6C42;&#x89E3;&#x7EBF;&#x6027;&#x77E9;&#x9635;&#x65B9;&#x7A0B;</td>
+</tr>
+<tr>
+<td>numpy.linalg.inv()</td>
+<td>&#x8BA1;&#x7B97;&#x77E9;&#x9635;&#x7684;&#x4E58;&#x6CD5;&#x9006;&#x77E9;&#x9635;</td>
+</tr>
+</tbody>
+</table>
+<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> By Wuyuexin </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> <i>updated</i> 2024-08-20 15:19:23 </span> </footer>
+						
+					</section>
+					
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+				</div>
+			</div>
+			
+		</div>
+
+		
+		
+		<a href="chapter1.html" class="navigation navigation-prev " aria-label="Previous page: 1. GetBook使用教程">
+			<i class="fa fa-angle-left"></i>
+		</a>
+		
+		
+		<a href="chapter2/chapter2_sub_01.html" class="navigation navigation-next " aria-label="Next page: 2.1 Numpy基础">
+			<i class="fa fa-angle-right"></i>
+		</a>
+		
+		
+		
+	</div>
+	<script>
+		var gitbook = gitbook || [];
+		gitbook.push(function() {
+			gitbook.page.hasChanged({"page":{"title":"2. Python Numpy","level":"1.3","depth":1,"next":{"title":"2.1 Numpy基础","level":"1.3.1","depth":2,"path":"chapter2/chapter2_sub_01.md","ref":"chapter2/chapter2_sub_01.md","articles":[]},"previous":{"title":"1. GetBook使用教程","level":"1.2","depth":1,"path":"chapter1.md","ref":"chapter1.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters","chapter-fold","-copy-code-button","code","page-footer-ex","-anchor-navigation-ex","expandable-chapters-small","prism","-highlight","-lunr","search","-search-pro","splitter","-sharing","-insert-logo","hide-element","-page-treeview","sectionx","-popup","-lightbox","theme-fexa","-theme-comscore","auto-scroll-table"],"ignores":["_book","node_modules"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"page-treeview":{"copyright":"","minHeaderCount":"2","minHeaderDeep":"2"},"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"flow":"typescript"}},"page-footer-ex":{"copyright":"By Wuyuexin","markdown":true,"update_label":"<i>updated</i>","update_format":"YYYY-MM-DD HH:mm:ss"},"splitter":{},"search":{},"auto-scroll-table":{},"theme-fexa":{"search-placeholder":"输入关键字搜索","logo":"./image/logo.png","favicon":"./favicon.ico"},"code":{"copyButtons":false},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"family":"Microsoft YaHei","size":12},"sectionx":{"tag":"b"},"anchor-navigation-ex":{"showLevel":false,"showGoTop":false},"expandable-chapters-small":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"url":"","style":"background: none; max-height: 80px; min-height: 80px"},"expandable-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"themeFexa":{"nav":[{"url":"/","target":"_blank","name":"简易教程"}]}},"title":"学习笔记","language":"zh-hans","gitbook":"*"},"file":{"path":"chapter2.md","mtime":"2024-08-20T07:19:23.759Z","type":"markdown"},"gitbook":{"version":"3.0.0","time":"2024-08-22T01:50:47.903Z"},"basePath":".","book":{"language":""}});
+		});
+	</script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sectionx/sectionx.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-theme-fexa/fexa.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-auto-scroll-table/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/buttons.js"></script>
+        
+    
+
+    </body>
+</html>
+
